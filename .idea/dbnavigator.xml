@@ -27,7 +27,7 @@ create table todo(
 );]]></console>
     </connection>
     <connection id="c371f9ec-78aa-49a5-b3a3-e62d3136a3f1">
-      <console name="SpringDB" type="STANDARD" schema="" session="Main"><![CDATA[# SQL 작성하는 공간 
+      <console name="SpringDB" type="STANDARD" schema="springweb" session="Main"><![CDATA[# SQL 작성하는 공간 
 
 #
 use springweb;
@@ -38,7 +38,10 @@ create table todo(
     tcontent varchar(100) ,
     tstate boolean ,
     primary key( tno )
-);]]></console>
+);
+select * from todo;
+# DB 상태 최신화
+commit;]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseEditorStateManager">
