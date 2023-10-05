@@ -4,13 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e47fc769-14b8-4c02-a28f-421a37b0a088" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/day04/AppStart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day04/ToDoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day04/TodoDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="e47fc769-14b8-4c02-a28f-421a37b0a088" name="변경" comment="ToDo RestController 구현 10_05 day04">
+      <change afterPath="$PROJECT_DIR$/src/main/java/day04/TodoDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day04/TodoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/day04/AppStart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/day04/AppStart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/day04/ToDoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/day04/ToDoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/day04/TodoDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/day04/TodoDto.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +81,20 @@
       <option name="presentableId" value="Default" />
       <updated>1696402468342</updated>
     </task>
+    <task id="LOCAL-00001" summary="ToDo RestController 구현 10_05 day04">
+      <option name="closed" value="true" />
+      <created>1696469537820</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1696469537820</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="ToDo RestController 구현 10_05 day04" />
+    <option name="LAST_COMMIT_MESSAGE" value="ToDo RestController 구현 10_05 day04" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

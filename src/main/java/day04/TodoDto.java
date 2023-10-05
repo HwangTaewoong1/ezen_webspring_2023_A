@@ -8,7 +8,7 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 public class TodoDto {
-    private int tno;
-    private String tcontent;
-    private String tstate;
+    private int tno;         // 번호
+    private String tcontent; // 내용물
+    private boolean tstate;   // 상태
 }
