@@ -4,20 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e47fc769-14b8-4c02-a28f-421a37b0a088" name="변경" comment="ToDo html,css수정 후 js ajax통신구현 10_12 day05">
-      <change afterPath="$PROJECT_DIR$/src/main/java/example/day05/AppStart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/example/day05/TodoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/example/day05/TodoDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/example/day05/TodoEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/example/day05/TodoEntityRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/example/day05/TodoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="e47fc769-14b8-4c02-a28f-421a37b0a088" name="변경" comment="엔티티, 엔티티Repository, 트랜잭션 엔티티 가공 10_12 day05">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/example/day04/AppStart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/example/day04/AppStart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/example/day04/TodoDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/example/day04/TodoDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/example/day04/TodoDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/example/day04/TodoDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/example/day04/TodoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/example/day04/TodoService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/todo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/todo.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/todo.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/todo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/스프링정리.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/스프링정리.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +60,7 @@
       <recent name="C:\Users\504\Desktop\ezen_webspring_2023_A\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="애플리케이션.example.day05.AppStart">
+  <component name="RunManager" selected="애플리케이션.AppStart">
     <configuration name="AppStart" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="example.day04.AppStart" />
       <module name="ezen_webspring_2023_A.main" />
@@ -136,13 +130,22 @@
       <option name="project" value="LOCAL" />
       <updated>1697080679572</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="엔티티, 엔티티Repository, 트랜잭션 엔티티 가공 10_12 day05">
+      <option name="closed" value="true" />
+      <created>1697098732492</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1697098732492</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ToDo RestController 구현 10_05 day04" />
     <MESSAGE value="ToDo html,css수정 후 js ajax통신구현 10_12 day05" />
-    <option name="LAST_COMMIT_MESSAGE" value="ToDo html,css수정 후 js ajax통신구현 10_12 day05" />
+    <MESSAGE value="엔티티, 엔티티Repository, 트랜잭션 엔티티 가공 10_12 day05" />
+    <option name="LAST_COMMIT_MESSAGE" value="엔티티, 엔티티Repository, 트랜잭션 엔티티 가공 10_12 day05" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -1,99 +1,107 @@
-console.log('todo.js open');
+console.log("todo JS 실행");
 
-// 1. POST AJAX
-function Post1(){
-    let tcontent = document.querySelector('.tcontent').value;
+// 1. post AJAX
+function post1() {
+    console.log("post1() 실행");
+
+    let tcontent = document.querySelector(".tcontent").value;
 
     $.ajax({
-        url: '/todo',
-        type: 'post',
-        data: { tno: 0, tcontent: tcontent, tstate: true },
-        success: r => {
-            if( r ){ alert('등록 성공'); }
-        },
-        error: e => { }
+        url : "/todo",
+        method : "post",
+        contentType: "application/json",
+        data : JSON.stringify({ tcontent : tcontent , tstate : false }) ,
+        success : function f(r){
+            console.log(" post 통신성공 : "+r)
+            if(r){
+             alert("등록 되었습니다.");
+             get1();
+            }
+        } ,
+        error : function f(e){
+            console.log("통신실패 : "+e)
+        }
     })
-    tcontent = ''; // 등록 성공했으면 변수 초기화
-    get1(); // 새로고침
-} // f end
-
-get1(); // 웹 켜질때 한번 실행
-// 2. GET AJAX
-function get1(){
-    $.ajax({
-        url: '/todo',
-        type: 'get',
-        data: {},
-        success: r => { console.log(r);
-
-            let todo_bottom = document.querySelector('.todo_bottom'); // js 출력구역
-            let html = ``;
-
-            r.forEach( s =>{
-
-                if( s.tstate ){
-                     html += `
-                            <div class="todo">
-                                <div class="tcontent"> ${s.tcontent} </div>
-                                <div class="ectbtns">
-                                    <button onclick="put1( ${s.tno}, '${s.tcontent}', '${s.tstate}' )" type="button"> 상태변경 </button>
-                                    <button onclick="delete1( ${s.tno} )" type="button"> 제거하기 </button>
-                                </div>
-                            </div>`
-                        }
-                        else {
-                                html += `
-                                    <div class="todo successTodo">
-                                        <div class="tcontent"> ${s.tcontent} </div>
-                                        <div class="ectbtns">
-                                            <button onclick="put1( ${s.tno}, '${s.tcontent}', '${s.tstate}' )" type="button"> 상태변경 </button>
-                                            <button onclick="delete1( ${s.tno} )" type="button"> 제거하기 </button>
-                                        </div>
-                                    </div>`
-                       }
-            })
-             todo_bottom.innerHTML = html;
-        },
-        error: e => { }
-    })
-} // f end
-
-// 2. post
-
-
-// 3. put ajax
-function put1( tno, tcontent, tstate ){
-
-        $.ajax({
-            url: '/todo',
-            type: 'put',
-            data: { tno: tno, tcontent: tcontent, tstate: tstate },
-            success: r => {
-                if( r ){ console.log(r)
-                    alert('수정 성공');
-                }
-            },
-            error: e => { }
-        })
-    get1(); // 새로고침
 }
 
-// 4. delete ajax
-function delete1( tno ){
+// 2. get AJAX -
+get1();
+function get1() {
+    console.log("getTodo() 실행");
 
-        $.ajax({
-            url: '/todo',
-            type: 'delete',
-            data: { tno: tno, },
-            success: r => {
+    let todo_bottom = document.querySelector(".todo_bottom");
+    let HTML =``;
+    $.ajax({
+        url : "/todo",
+        method : "get",
+        data : {} ,
+        success : function f(r){
+            console.log(" get 통신성공 : ")
+            console.log(r)
+            r.forEach( (s) => {
 
-                if( r ){
-                    console.log(r);
-                    alert('삭제 성공')
-                }
-            },
-            error: e => { }
-        })
+                if( !s.tstate ){ HTML +=`<div class="todo">`; }
+                else { HTML +=`<div class="todo successTodo">`; }
 
-    get1(); // 새로고침
+                HTML +=`
+                    <div class="tcontent"> ${s.tcontent} </div>
+                    <div class="etcbtns">
+                        <button onclick="put1(${s.tno},${s.tstate})" type="button"> 상태변경 </button>
+                        <button onclick="delete1(${s.tno})" type="button"> 제거하기 </button>
+                   </div>
+                 </div>
+                `;
+            });
+            todo_bottom.innerHTML = HTML;
+        } ,
+        error : function f(e){
+            console.log("통신실패 : "+e)
+        }
+    })
+}
+
+// 3. put AJAX
+function put1(tno,tstate) {
+    console.log("putTodo() 실행");
+
+    let newtstate = !tstate;
+
+    $.ajax({
+        url : "/todo",
+        method : "put",
+        data :JSON.stringify( { tno : tno, tstate : newtstate }) ,
+        contentType: "application/json",
+        success : function f(r){
+            console.log("통신성공 : "+r)
+                if(r) { alert("상태가 수정 되었습니다.");}
+                else { alert("수정을 실패했습니다.");}
+                get1();
+
+        } ,
+        error : function f(e){
+            console.log("통신실패 : ")
+            console.log(e)
+        }
+    })
+}
+
+// 4. delete AJAX
+function delete1(tno) {
+    console.log("delete1() 실행");
+
+    $.ajax({
+        url : "/todo",
+        method : "delete",
+        data : { tno : tno } ,
+        success : function f(r){
+            console.log("통신성공 : "+r)
+            if(r){
+                 alert("삭제되었습니다.");
+                 get1();
+            }
+        } ,
+        error : function f(e){
+            console.log("통신실패 : "+e)
+        }
+    })
 }
