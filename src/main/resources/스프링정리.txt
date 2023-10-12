@@ -36,6 +36,7 @@
                        css/js/img 등등
                     - templates
                     **** - application.properties : 현재 프로젝트 설정 소스 파일
+                            - jpa
 
                 ****bulid.gradle : 라이브러리 자동 빌드 해주는 작성 코드 파일
 
@@ -50,42 +51,122 @@
 		      SpringApplication.run( 현재 클래스명.class );
 
 - 어노테이션
-1. 스프링
-         @SpringBootApplication             스프링부트 실행 관련 제공
-         @ServletComponentScan              서블릿을 찾아서 컨테이너에 빈 등록
-         @Autowired                         컨테이너에서 빈 찾아서 객체 주입
-2. MVC
-         @Controller                        해당 클래스를 Controller 사용 주입 [ 컨테이너에 빈 등록 ]
-         @RestController                    해당 클래스를 Controller 사용 주입 [ 컨테이너에 빈 등록 ] + @ResponseBody
-         @ResponseBody                      해당 Mapping 함수들의 response 반환타입을 자동으로 설정
-         @RequestMapping                    해당 함수/클래스를 매핑
-         @GetMapping                        HTTP 요청 GET 함수 매핑
-         @PostMapping                       HTTP 요청 Post 함수 매핑
-         @PutMapping                        HTTP 요청 Put 함수 매핑
-         @DeleteMapping                     HTTP 요청 Delete 함수 매핑
-         @Service                           해당 클래스를 Service 사용 주입 [ 컨테이너에 빈 등록 ]
-         @Component                         해당 클래스를 컨테이너에 빈 등록
-            @RequestParam                   쿼리스트링 형식의 요청 매개변수 매핑                   URL?매개변수=값?매개변수=값
-            @RequestBody                    HTTP body( Post/Put ) 형식의 요청 매개변수를 객체로 매핑
-            - @ModelAttribute                 쿼리스트링 형식의 요청 매개변수를 객체로 매핑
-            - @PathVariable                   경로상의 매개변수 형식의 요청 매개변수 매핑           URL/값/값
+    1. 스프링
+             @SpringBootApplication             스프링부트 실행 관련 제공
+             @ServletComponentScan              서블릿을 찾아서 컨테이너에 빈 등록
+             @Autowired                         컨테이너에서 빈 찾아서 객체 주입
+    2. MVC
+             @Controller                        해당 클래스를 Controller 사용 주입 [ 컨테이너에 빈 등록 ]
+             @RestController                    해당 클래스를 Controller 사용 주입 [ 컨테이너에 빈 등록 ] + @ResponseBody
+             @ResponseBody                      해당 Mapping 함수들의 response 반환타입을 자동으로 설정
+             @RequestMapping                    해당 함수/클래스를 매핑
+             @GetMapping                        HTTP 요청 GET 함수 매핑
+             @PostMapping                       HTTP 요청 Post 함수 매핑
+             @PutMapping                        HTTP 요청 Put 함수 매핑
+             @DeleteMapping                     HTTP 요청 Delete 함수 매핑
+             @Service                           해당 클래스를 Service 사용 주입 [ 컨테이너에 빈 등록 ]
+             @Component                         해당 클래스를 컨테이너에 빈 등록
+                @RequestParam                   쿼리스트링 형식의 요청 매개변수 매핑                   URL?매개변수=값?매개변수=값
+                @RequestBody                    HTTP body( Post/Put ) 형식의 요청 매개변수를 객체로 매핑
+                - @ModelAttribute                 쿼리스트링 형식의 요청 매개변수를 객체로 매핑
+                - @PathVariable                   경로상의 매개변수 형식의 요청 매개변수 매핑           URL/값/값
 
-3. lombok
-         @NoArgsConstructor                 빈 생성자 자동 생성
-         @AllArgsConstructor                풀 생성자 자동 생성
-         @Getter                            필드의 getter메소드 자동 생성
-         @Setter                            필드의 setter메소드 자동 생성
-         @ToString                          필드의 toString메소드 자동 생성
-         @Builder                           빌더 패턴 [ 유연하게(생성자 단점 보완) 객체 생성 도와주는 함수 제공 ]
-4. JPA
+    3. lombok
+             @NoArgsConstructor                 빈 생성자 자동 생성
+             @AllArgsConstructor                풀 생성자 자동 생성
+             @Getter                            필드의 getter메소드 자동 생성
+             @Setter                            필드의 setter메소드 자동 생성
+             @ToString                          필드의 toString메소드 자동 생성
+             @Builder                           빌더 패턴 [ 유연하게(생성자 단점 보완) 객체 생성 도와주는 함수 제공 ]
 
-
-
-
-
-
-
- - HTML 반환
+- HTML 반환
     Resource 클래스 사용
     경로 : return new ClassPathResource("/templates/todo.html");
     - 스프링은 기본적으로 resources 폴더내에서 정적파일 검색
+
+- JPA
+    -----
+        패러다임(=방식/체계/규정 틀)
+        ORM( = Object Relational Mapping ) : 객체 관계 매핑
+            - 객체 지향 프로그래밍   : 객체들간의 상호작용을 통한 프로그래밍
+            - 관계형 데이터베이스    : 열/행의 테이블/관계로 데이터를 저장하는 방식
+            + 관계형 데이터베이스를 객체지향으로 사용
+
+        JPA : JAVA Persisten api : ORM 패러다임으로 만들어진 라이브러리
+
+        엔티티클래스 = 테이블
+        엔티티(객체) = 레코드
+        -----
+        MYSQL                 --------------------------> ORM 매핑 -------> JPA(ORM)
+        테이블 TODO                                                       @Entity
+            create table todo(                                           class todo (
+                tno int auto_increment primary key ,                          private int tno;
+                tcontent varchar(100) ,                                       private String tcontent;
+                tstate boolean                                                private boolean tstate;
+            );                                                           )
+    -----
+    1. 그레이들에 의존성 추가
+     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    - 스프링 실행시 DB연동
+    - 경로 오류 [ 1. 경로 셋팅 안함 2. 경로에 오타 뜸 ]
+        Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+    2. JPA 옵션 세팅
+        - application.properties 에서 코드 작성
+        ---- 연동에 필요한 필수 코드
+        spring.datasource.driver.className = DBMS 드라이버 이름[ 각 회사마다 상이 ]
+        spring.datasource.url= 연동할 데이터 베이스 경로
+        spring.datasource.username=계정명
+        spring.datasource.password=DB계정 패스워드
+        ----
+        spring.jpa.hibernate.ddl-auto = DDL자동실행.
+            create : 만약에 매핑된 엔티티가 실제 DB에 없으면/있어도 (서버 실행할때마다)새로 테이블 생성
+            update :
+                만약에 매핑된 엔티티가 실제 DB에 없으면 새로운 테이블 생성
+                만약에 매핑된 엔티티가 실제 DB에 있으면 테이블의 변경이 있으면 수정
+
+    3. 엔티티(객체)
+        1. 엔티티 생성시 필수
+                1. @Entity
+                2. @Id
+        2. 필드 선언 [ MYSQL과 JAVA 타입 변환 ]
+
+    4. 엔티티 조작 [ 인터페이스 ]
+        - JPARepository
+            * 기본적인 CRUD 해당하는 SQL 지원
+            * 선언 방법
+                1. 인터페이스 생성
+                2. @Repository
+                3. public interface 인터페이스명 extends JpaRepository< 조작할엔티티클래스명 , 해당엔티티pk필드자료형 >
+                    - 조작할때 PK필드가 식별 하므로 각 엔티티별 PK필드(@Id)는 필수
+
+    5. 엔티티 인터페이스 사용처 [ 서비스에서만 사용(각 MVC별 역할 분담) ]
+        1. CRUD
+            1. insert
+                인터페이스명.save( 저장할엔티티 )
+                반환타입 :
+            2. select
+                인터페이스명.findAll()
+                반환타입 : 검색된 엔티티 List<Entity>
+                2.
+                인터페이스명.findById( pk번호 )
+                반환타입 : 검색된 엔티티 1개 Optional<TodoEntity>
+                    Optional 클래스 : null 관련 메소드 제공 [ nullPointerExection 안전성 보장 ]
+                    - nullPointerExection : 객체가 null 일때 발생하는 오류
+                    1. .isPresent()
+                        Optinal 객체를 사용하기전에 null 인지 아닌지 체크하고 사용
+                    2. .get()
+                        Optional 객체내 실제 객체(엔티티)를  꺼내기
+            3.delete
+                1.
+                인터페이스명.delete( 삭제할 엔티티 객체 )
+                반환타입: void
+                2.
+                인터페이스명.deleteById( 삭제할 pk번호 )
+                반환타입 : void
+
+            4.update
+                엔티티객체명.set필드명( 새로운값 )
+                @Transactional 필수
+
+
