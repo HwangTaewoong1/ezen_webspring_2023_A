@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="/phone.css" rel="stylesheet">
+</head>
+<body>
+    <div class="todowrap"> <!-- 전체구역 -->
+        <h1> 전화기록부 </h1>
+
+        <div class="todo_top"> <!-- 쓰기구역 -->
+            <input class="tcontent" type="text" placeholder="이름을 입력하세요."/>
+            <input class="tphone" type="text" placeholder="휴대번호를 입력하세요."/>
+            <button onclick="post1()" type="button">등록</button>
+        </div>
+
+            <div class="todo_bottom"> <!-- js 출력 구역 --> </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="/phone.js"></script>
+</body>
+</html>

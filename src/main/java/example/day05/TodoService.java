@@ -27,7 +27,7 @@ public class TodoService {
 
         TodoEntity todoEntity = TodoEntity.builder()
                 .tcontent(todoDto.getTcontent())
-                .tstate(todoDto.isTstate())
+                .tphone(todoDto.getTphone())
                 .build();
 
         //2. JpaRepository를 이용한 엔티티 저장 [ insert 대체 ]
@@ -51,7 +51,7 @@ public class TodoService {
             TodoDto todoDto = TodoDto.builder()
                   .tno(entity.getTno())
                   .tcontent(entity.getTcontent())
-                  .tstate(entity.isTstate())
+                  .tphone(entity.getTphone())
                   .build();
             // 4. 변환된 dto를 리스트에 저장
             list.add(todoDto);
@@ -70,7 +70,8 @@ public class TodoService {
             // 3. optional 객체에 엔티티 꺼내기
             TodoEntity updateEntity =  todoEntity.get();
             // 4. 엔티티 찾았으니 필드 수정 [ 상태필드만 변경 ]
-            updateEntity.setTstate(todoDto.isTstate());
+            updateEntity.setTcontent(todoDto.getTcontent());
+            updateEntity.setTphone(todoDto.getTphone());
         }
 
         return false;

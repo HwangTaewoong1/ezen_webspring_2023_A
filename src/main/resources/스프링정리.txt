@@ -70,6 +70,8 @@
                 @RequestBody                    HTTP body( Post/Put ) 형식의 요청 매개변수를 객체로 매핑
                 - @ModelAttribute                 쿼리스트링 형식의 요청 매개변수를 객체로 매핑
                 - @PathVariable                   경로상의 매개변수 형식의 요청 매개변수 매핑           URL/값/값
+             @Repository                        Spring에서 리포지토리를 지정하기 위한 어노테이션 [ spring 컨테이너에 빈 등록]
+
 
     3. lombok
              @NoArgsConstructor                 빈 생성자 자동 생성
@@ -85,6 +87,28 @@
     - 스프링은 기본적으로 resources 폴더내에서 정적파일 검색
 
 - JPA
+    1. entity
+        @Entity                                               : 해당 클래스를 데이터베이스의 테이블과 매핑
+        @Table(name="테이블명")                                 : 데이터 베이스의 테이블 이름 정의
+        @ID                                                   : 해당 필드를 PK로 선정
+        @GeneratedValue( strategy = GenerationType.IDENTITY ) : PK 정의할 방법 : auto_increment
+        @Column(name="필드명" , length="최대문자수" , nullable=false , nullable = false , unique = true )
+            name=" "            : 생략시 자바 필드명이 테이블 필드명을 자동 생성
+            length="최대문자수"   : 필드내 데이터 최대 길이수 ( String 기본값 255 )
+            nullable = false    : not null ( 기본값 true )
+            unique = true       : nuique ( 기본값 false )
+
+    2. Repository
+        @Repository
+        @Translation
+
+    3. Jpa Auditing
+        @EnableJpaAuditing
+        @EntityListeners( AuditingEntityListeners.class )
+        @MappedSuperclass
+        @CreateDate
+        @LastModifiedDate
+
     -----
         패러다임(=방식/체계/규정 틀)
         ORM( = Object Relational Mapping ) : 객체 관계 매핑
@@ -127,8 +151,9 @@
 
     3. 엔티티(객체)
         1. 엔티티 생성시 필수
-                1. @Entity
-                2. @Id
+                1. @Entity (클래스 상단)
+                2. @Id  (pk)
+                    No identifier specified for entity: example.day06.NoteEntity
         2. 필드 선언 [ MYSQL과 JAVA 타입 변환 ]
 
     4. 엔티티 조작 [ 인터페이스 ]
@@ -168,5 +193,61 @@
             4.update
                 엔티티객체명.set필드명( 새로운값 )
                 @Transactional 필수
+- 트랜잭션
+    - 하나/여럿 작업[SQL]들을 묶어서 최소단위 업무처리
+    - COMMIT : 최종완료 [ 마지막 commit 이후부터 현재 완료까지 ] -> SQL 결과 적용
+    - Rollback : 뒤로가기/취소 [ 마지막 commit 으로 이동 ] -> SQL 결과 적용 불가능
+
+                ----> 성공    ----> 부분완료 --COMMIT --> 완료
+                                      |
+    활용(실행 : SQL n개)                |
+                                      |
+                ----> 오류    ----> 실패   -- Rollback --> 철회
+
+- HTTP
+
+    HTTP : 문서 이동 규약
+       보내고 받는 방법 = 편지봉투 [ contentType , method , 쿼리스트링 ]
+         contentType
+                   1. application/x-www-form-urlencoded ( AJAX 기본값 )
+                        data : { }
+                            [JAVA SPRING] Controller
+                            1.
+                                @PostMapping
+                                NoteDto
+
+                            2.
+                                @PostMapping
+                                @RequestBody NoteDto [ 자동 매핑 불가능 합니다. ] X
 
 
+                   2. application/json                  ( AXIOS 기본값 )
+                        data : json.stringify({ })
+                            2.
+                              @PostMapping
+                              @RequestBody NoteDto [ 자동 매핑 불가능 합니다. ] X
+
+
+                   3. text/html
+                   4. multipart/form-data
+                            @RequestBody NoteDto
+                   5. dto
+
+       내용물 = 편지지 [ Body : post , put ]
+
+            data : { }
+
+            1. JSON.Stringify() : json타입 --> 문자열타입
+            2. JSON.parse()     : 문자열타입 --> json타입
+
+           내용물 형식/생김새/양식
+            "{ asaa:"ddd" }" json형식 문자열타입
+            { asaa:"ddd" } json형식 json타입
+
+            "1" 숫자형식 문자열타입
+             1  숫자형식 정수형타입
+
+    AJAX <----------------------HTTP------------------------> JAVA
+
+    - AJAX [ HTTP 사용하는 함수 ]
+    - WebSocket [ WS 사용하는 클래스 ]

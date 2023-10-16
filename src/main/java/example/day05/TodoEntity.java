@@ -19,7 +19,7 @@ public class TodoEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY) // AUTO_INCREMENT
     private int tno;
     private String tcontent;
-    private boolean tstate;
+    private String tphone;
 }
 
 /*

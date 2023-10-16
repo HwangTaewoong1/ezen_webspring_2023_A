@@ -9,5 +9,5 @@ import lombok.*;
 public class TodoDto {
     private int tno;
     private String tcontent;
-    private boolean tstate;
+    private String tphone;
 }

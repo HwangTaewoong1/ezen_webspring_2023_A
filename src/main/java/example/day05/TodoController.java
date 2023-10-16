@@ -8,14 +8,14 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/todo")
+@RequestMapping("/phone")
 public class TodoController {
     @Autowired
     private TodoService todoService;
 
     @GetMapping("/index")
     public Resource getIndex(){
-        return new ClassPathResource("templates/index.html");
+        return new ClassPathResource("templates/phone.html");
     }
 
     @PostMapping("")

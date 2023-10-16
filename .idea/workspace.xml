@@ -5,13 +5,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e47fc769-14b8-4c02-a28f-421a37b0a088" name="변경" comment="엔티티, 엔티티Repository, 트랜잭션 엔티티 가공 10_12 day05">
+      <change afterPath="$PROJECT_DIR$/src/main/java/example/day06/NoteController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/example/day06/NoteDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/example/day06/NoteEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/example/day06/NoteEntityRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/example/day06/NoteService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/example/day06/NoteStart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/example/팀과제/CarController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/example/팀과제/CarDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/example/팀과제/CarEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/example/팀과제/CarEntityRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/example/팀과제/CarService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/example/팀과제/CarStart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ezenweb/EzenWebStart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ezenweb/controller/MemberController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ezenweb/model/dto/MemberDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ezenweb/model/entity/BaseTime.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ezenweb/model/entity/MemberEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ezenweb/model/repository/MemberEntityRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ezenweb/service/MemberService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/phone.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/phone.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/phone.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/example/day04/AppStart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/example/day04/AppStart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/example/day04/TodoDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/example/day04/TodoDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/example/day04/TodoDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/example/day04/TodoDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/example/day04/TodoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/example/day04/TodoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/example/day05/TodoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/example/day05/TodoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/example/day05/TodoDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/example/day05/TodoDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/example/day05/TodoEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/example/day05/TodoEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/example/day05/TodoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/example/day05/TodoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/todo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/todo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/todo.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/todo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/스프링정리.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/스프링정리.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +52,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -60,13 +86,39 @@
       <recent name="C:\Users\504\Desktop\ezen_webspring_2023_A\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="애플리케이션.AppStart">
+  <component name="RunManager" selected="애플리케이션.EzenWebStart">
     <configuration name="AppStart" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="example.day04.AppStart" />
       <module name="ezen_webspring_2023_A.main" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="example.day04.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EzenWebStart" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ezenweb.EzenWebStart" />
+      <module name="ezen_webspring_2023_A.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ezenweb.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NoteStart" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="example.day06.NoteStart" />
+      <module name="ezen_webspring_2023_A.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="example.day06.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -89,6 +141,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="애플리케이션.EzenWebStart" />
+        <item itemvalue="애플리케이션.NoteStart" />
         <item itemvalue="애플리케이션.example.day05.AppStart" />
         <item itemvalue="애플리케이션.AppStart" />
       </list>
@@ -154,6 +208,20 @@
           <url>file://$PROJECT_DIR$/src/main/java/example/day05/TodoEntity.java</url>
           <line>25</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/example/day06/NoteService.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/ezenweb/model/repository/MemberEntityRepository.java</url>
+          <line>9</line>
+          <properties class="ezenweb.model.repository.MemberEntityRepository" method="findPwByMemailAndMphone">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
