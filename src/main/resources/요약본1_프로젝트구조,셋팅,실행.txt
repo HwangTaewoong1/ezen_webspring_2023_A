@@ -57,5 +57,5 @@
         VIEW , CONTROLLER
     서비스 레이어
         SERVICE
-    리포지토리 레이어
+    레파지토리 레이어
         REPOSITORY

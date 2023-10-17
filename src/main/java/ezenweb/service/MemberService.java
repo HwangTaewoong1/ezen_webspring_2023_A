@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.transaction.Transactional;
 import java.util.ArrayList;
 import java.util.List;
@@ -31,7 +32,8 @@ public class MemberService {
         if ( memberEntity.getMno() >= 1 ) { return true; }
         return false;
     }
-    // 2. [R] 회원정보 호출
+    /*
+    // 2. [R] 회원정보 호출 : 세션 구현 안했을때. (태웅 ver)
     @Transactional
     public MemberDto getMember( int mno ) {
         // 1. mno[회원번호pk]를 이용한 회원 엔티티 찾기
@@ -45,6 +47,9 @@ public class MemberService {
        }
         return null;
     }
+
+    */
+
     // 3. [U] 회원정보 수정
     @Transactional // 트랜잭셔널 : 하나/여럿 작업들을 묶어서 최소단위 업무처리
     public boolean updateMember(MemberDto memberDto) {
@@ -100,11 +105,54 @@ public class MemberService {
         }
         return null;
     }
-    // 7. 로그인
+    /*
+    // 7. 로그인 (태웅 ver)
     @Transactional
     public boolean login(String memail, String mpassword) {
         Optional<MemberEntity> optionalMemberEntity = Optional.ofNullable(memberEntityRepository.findByMemailAndMpassword(memail, mpassword));
         return optionalMemberEntity != null;
     }
-    // 8. 로그아웃
+    */
+
+
+    // 5. [강사님.VER] 로그인
+    // 로그인 했고 안했고 저장하는곳 => request객체도 스프링 컨테이너 등록상태
+    @Autowired
+    private HttpServletRequest request;
+
+    public boolean login(MemberDto memberDto ) {
+        //1. 입력받은 데이터[아이디/패스워드] 검증하기
+       List<MemberEntity> memberEntities = memberEntityRepository.findAll();
+            // 2. 동일한 아이디 / 비밀번호 찾기
+            for( int i = 0 ; i < memberEntities.size() ; i++ ) {
+                MemberEntity m = memberEntities.get(i);
+                // 3. 동일한 데이터 엔티티 찾았다.
+                if(m.getMemail().equals(memberDto.getMemail()) &&
+                        m.getMpassword().equals(memberDto.getMpassword())) {
+                    // 4. 세션 부여          // 세션 저장
+                    request.getSession().setAttribute("loginDto" , m.toDto());
+                    return true;
+                }
+            }
+            return false;
+    }
+
+    // 6. [강사님.VER] 로그아웃
+    public boolean logout() {
+
+        // 세션 저장/수정
+        request.getSession().setAttribute("loginDto", null);
+        return false;
+    }
+
+    // 2. [R] 회원정보 호출
+    @Transactional
+    public MemberDto getMember() { // 강사님 ver 세션 구현 했을 때
+        // 1.
+        Object session = request.getSession().getAttribute("loginDto");
+        if (session != null){
+           return (MemberDto) session;
+        }
+        return null;
+    }
 }
