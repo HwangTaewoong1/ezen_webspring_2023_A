@@ -4,39 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e47fc769-14b8-4c02-a28f-421a37b0a088" name="변경" comment="엔티티, 엔티티Repository, 트랜잭션 엔티티 가공 10_12 day05">
-      <change afterPath="$PROJECT_DIR$/src/main/java/example/day06/NoteController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/example/day06/NoteDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/example/day06/NoteEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/example/day06/NoteEntityRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/example/day06/NoteService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/example/day06/NoteStart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/example/팀과제/CarController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/example/팀과제/CarDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/example/팀과제/CarEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/example/팀과제/CarEntityRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/example/팀과제/CarService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/example/팀과제/CarStart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ezenweb/EzenWebStart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ezenweb/controller/MemberController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ezenweb/model/dto/MemberDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ezenweb/model/entity/BaseTime.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ezenweb/model/entity/MemberEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ezenweb/model/repository/MemberEntityRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ezenweb/service/MemberService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/phone.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/phone.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/phone.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="e47fc769-14b8-4c02-a28f-421a37b0a088" name="변경" comment="과제5 , BaseTime , Member 기능 구현  10_16 day06">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/example/day05/TodoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/example/day05/TodoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/example/day05/TodoDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/example/day05/TodoDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/example/day05/TodoEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/example/day05/TodoEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/example/day05/TodoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/example/day05/TodoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/todo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/todo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/스프링정리.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/스프링정리.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,14 +161,23 @@
       <option name="project" value="LOCAL" />
       <updated>1697098732492</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="과제5 , BaseTime , Member 기능 구현  10_16 day06">
+      <option name="closed" value="true" />
+      <created>1697447242872</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1697447242872</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ToDo RestController 구현 10_05 day04" />
     <MESSAGE value="ToDo html,css수정 후 js ajax통신구현 10_12 day05" />
     <MESSAGE value="엔티티, 엔티티Repository, 트랜잭션 엔티티 가공 10_12 day05" />
-    <option name="LAST_COMMIT_MESSAGE" value="엔티티, 엔티티Repository, 트랜잭션 엔티티 가공 10_12 day05" />
+    <MESSAGE value="과제5 , BaseTime , Member 기능 구현  10_16 day06" />
+    <option name="LAST_COMMIT_MESSAGE" value="과제5 , BaseTime , Member 기능 구현  10_16 day06" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
