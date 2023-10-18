@@ -38,6 +38,10 @@ public class MemberEntity extends BaseTime {
     @ColumnDefault("'user'") // ColumnDefault("'초기값'") -> default ( 기본값 ) * 문자일 경우 '' 문자처리 해야함 !
     private String mrole;       // 6. 회원등급( 일반회원 = user , 관리자 회원 = admin )
 
+    // private LocalDateTime bdate; // BaseTime 클래스로부터 상속받으면 자동..
+    // private LocalDateTime udate; // BaseTime 클래스로부터 상속받으면 자동..
+    // [ BaseTime 클래스가 상속해주는 필드 : 1. 회원가입일자 , 2. 회원정보수정일 ]
+
     // Entity --> Dto 변환 함수
         // service에서 entity정보를 controller로 이동하기 위해서
     public MemberDto toDto() {

@@ -52,6 +52,7 @@ commit;]]></console>
   </component>
   <component name="DBNavigator.Project.DatasetFilterManager">
     <filter-actions connection-id="2ea1ad6a-75f8-406f-801c-05bf44b20833" dataset="performance_schema.data_locks" active-filter-id="" />
+    <filter-actions connection-id="2ea1ad6a-75f8-406f-801c-05bf44b20833" dataset="springweb.member_entity" active-filter-id="" />
   </component>
   <component name="DBNavigator.Project.ExecutionManager">
     <retain-sticky-names value="false" />
