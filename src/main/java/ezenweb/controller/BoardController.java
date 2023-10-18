@@ -16,22 +16,22 @@ public class BoardController {
     private BoardService boardService;
 
     // 1. [C] 글쓰기
-    @PostMapping("/post")
+    @PostMapping("")
     public boolean write(BoardDto boardDto) {
         return boardService.write(boardDto);
     }
     // 2. [R] 게시글 출력
-    @GetMapping("/get")
+    @GetMapping("")
     public List<BoardDto> getAll() {
         return boardService.getAll();
     }
     // 3. [U] 게시글 수정
-    @PutMapping("/put")
+    @PutMapping("")
     public boolean update( BoardDto boardDto ) {
         return boardService.update(boardDto);
     }
     // 4. [D] 게시글 삭제
-    @DeleteMapping("/delete")
+    @DeleteMapping("")
     public boolean delete(@RequestParam int bno) {
         return boardService.delete(bno);
     }

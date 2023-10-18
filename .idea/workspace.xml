@@ -4,20 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e47fc769-14b8-4c02-a28f-421a37b0a088" name="변경" comment="과제5번 강사님 ver 추가 &#10;스프링 요약본 나누기">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ezenweb/controller/BoardController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ezenweb/model/dto/BoardDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ezenweb/model/entity/BoardEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ezenweb/model/repository/BoardEntityRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ezenweb/service/BoardService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+    <list default="true" id="e47fc769-14b8-4c02-a28f-421a37b0a088" name="변경" comment="day88 게시판 entity dto repository rest구축">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ezenweb/controller/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ezenweb/controller/MemberController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ezenweb/model/entity/MemberEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ezenweb/model/entity/MemberEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/요약본1_프로젝트구조,셋팅,실행.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/요약본1_프로젝트구조,셋팅,실행.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/요약본2_어노테이션.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/요약본2_어노테이션.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/요약본4_JPA.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/요약본4_JPA.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ezenweb/controller/BoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ezenweb/controller/BoardController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ezenweb/service/BoardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ezenweb/service/BoardService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,7 +193,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697532916576</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="day88 게시판 entity dto repository rest구축">
+      <option name="closed" value="true" />
+      <created>1697602730124</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1697602730124</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -213,7 +211,8 @@
     <MESSAGE value="과제5 , BaseTime , Member 기능 구현  10_16 day06" />
     <MESSAGE value="요약본 나누기" />
     <MESSAGE value="과제5번 강사님 ver 추가 &#10;스프링 요약본 나누기" />
-    <option name="LAST_COMMIT_MESSAGE" value="과제5번 강사님 ver 추가 &#10;스프링 요약본 나누기" />
+    <MESSAGE value="day88 게시판 entity dto repository rest구축" />
+    <option name="LAST_COMMIT_MESSAGE" value="day88 게시판 entity dto repository rest구축" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -30,18 +30,32 @@ public class BoardService {
     // 2. [R] 게시글 출력
     @Transactional
     public List<BoardDto> getAll() {
-        return null;
+        List<BoardEntity> entities = boardEntityRepository.findAll();
+        List<BoardDto> boardDtos = new ArrayList<>();
+        entities.forEach( e -> { boardDtos.add(e.alltoDto()); });
+        return boardDtos;
     }
 
     // 3. [U] 게시글 수정
     @Transactional
     public boolean update(BoardDto boardDto) {
+      Optional<BoardEntity> optionalBoardEntity =
+              boardEntityRepository.findById(boardDto.getBno());
+      if( optionalBoardEntity.isPresent() ){
+
+         BoardEntity boardEntity = optionalBoardEntity.get();
+
+         boardEntity.setBtitle((boardDto.getBtitle()));
+         boardEntity.setBcontent((boardDto.getBcontent()));
+         boardEntity.setBfile((boardDto.getBfile()));
+      }
        return false;
     }
 
     // 4. [D] 게시글 삭제
     @Transactional
     public boolean delete(int bno) {
+        boardEntityRepository.deleteById( bno );
         return false;
     }
 }
