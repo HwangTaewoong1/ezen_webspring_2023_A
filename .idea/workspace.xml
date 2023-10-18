@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e47fc769-14b8-4c02-a28f-421a37b0a088" name="변경" comment="day88 게시판 entity dto repository rest구축">
+    <list default="true" id="e47fc769-14b8-4c02-a28f-421a37b0a088" name="변경" comment="day88 게시판 SERVICE CONTROLLER">
+      <change afterPath="$PROJECT_DIR$/src/main/reactapp/react_1일차.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/example/day01/1_component.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/example/day01/2_component.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/example/day01/3_component.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/example/day01/4_component.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ezenweb/controller/BoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ezenweb/controller/BoardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ezenweb/service/BoardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ezenweb/service/BoardService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -201,7 +204,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697602730124</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="day88 게시판 SERVICE CONTROLLER">
+      <option name="closed" value="true" />
+      <created>1697611714466</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1697611714466</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -212,7 +223,8 @@
     <MESSAGE value="요약본 나누기" />
     <MESSAGE value="과제5번 강사님 ver 추가 &#10;스프링 요약본 나누기" />
     <MESSAGE value="day88 게시판 entity dto repository rest구축" />
-    <option name="LAST_COMMIT_MESSAGE" value="day88 게시판 entity dto repository rest구축" />
+    <MESSAGE value="day88 게시판 SERVICE CONTROLLER" />
+    <option name="LAST_COMMIT_MESSAGE" value="day88 게시판 SERVICE CONTROLLER" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
