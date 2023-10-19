@@ -6,6 +6,8 @@ import lombok.*;
 import org.hibernate.annotations.ColumnDefault;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 
 @AllArgsConstructor
@@ -37,6 +39,12 @@ public class MemberEntity extends BaseTime {
     @Column// 해당 필드 선정
     @ColumnDefault("'user'") // ColumnDefault("'초기값'") -> default ( 기본값 ) * 문자일 경우 '' 문자처리 해야함 !
     private String mrole;       // 6. 회원등급( 일반회원 = user , 관리자 회원 = admin )
+
+    // 게시물 목록 = 내가 쓴 게시물
+    @Builder.Default  // 빌더 패턴 사용시 해당 필드에 값을 기본 값으로 사용
+    // @OneToMany( mappedBy = "참조할 객체명 ")
+    @OneToMany( mappedBy = "memberEntity")// 1. 하나가 다수에게 [ PK ] 실제 db영향x
+    private List<BoardEntity> boardEntityList = new ArrayList<BoardEntity>();
 
     // private LocalDateTime bdate; // BaseTime 클래스로부터 상속받으면 자동..
     // private LocalDateTime udate; // BaseTime 클래스로부터 상속받으면 자동..

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- css/js/img 는 static 폴더에서부터 경로시작 하므로 (static) 생략 -->
+    <link href="/todo.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="todowrap"> <!-- 전체구역 -->
+        <h1> 나만의 할 일 목록 </h1>
+
+        <div class="todo_top"> <!-- 쓰기구역 -->
+            <input class="tcontent" type="text"/>
+            <button onclick="post1()" type="button">등록</button>
+        </div>
+
+        <div class="todo_bottom"> <!-- js 출력 구역 -->
+        </div>
+    </div>
+    <!-- css/js/img 는 static 폴더에서부터 경로시작하므로 (static)생략 -->
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="/todo.js"></script>
+
+</body>
+</html>

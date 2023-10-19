@@ -1,4 +1,4 @@
-package example.팀과제;
+package example.팀과제.Car;
 
 import lombok.*;
 

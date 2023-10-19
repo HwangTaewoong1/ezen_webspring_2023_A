@@ -1,4 +1,4 @@
-package example.팀과제;
+package example.팀과제.Car;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

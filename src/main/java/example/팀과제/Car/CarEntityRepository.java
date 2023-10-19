@@ -1,4 +1,4 @@
-package example.팀과제;
+package example.팀과제.Car;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;

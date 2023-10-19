@@ -4,13 +4,45 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e47fc769-14b8-4c02-a28f-421a37b0a088" name="변경" comment="day88 게시판 SERVICE CONTROLLER">
-      <change afterPath="$PROJECT_DIR$/src/main/reactapp/react_1일차.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/example/day01/1_component.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/example/day01/2_component.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/example/day01/3_component.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/example/day01/4_component.jsx" afterDir="false" />
+    <list default="true" id="e47fc769-14b8-4c02-a28f-421a37b0a088" name="변경" comment="day88 리액트 설치 및 실행, JSX 정의">
+      <change afterPath="$PROJECT_DIR$/src/main/java/example/객체연관관계/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/example/객체연관관계/Main2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/example/객체연관관계/게시물.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/example/객체연관관계/댓글.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/example/객체연관관계/상위클래스.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/example/객체연관관계/하위클래스.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/example/객체연관관계/회원.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/example/팀과제/연관관계설계/AppStart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/example/팀과제/연관관계설계/CategoryEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/example/팀과제/연관관계설계/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/example/팀과제/연관관계설계/OrderEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/example/팀과제/연관관계설계/ProductEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/example/팀과제/연관관계설계/제품.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/example/팀과제/연관관계설계/주문.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/example/팀과제/연관관계설계/카테고리.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/reactapp/react_2일차.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/example/day01/component_과제.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/example/day02/1_componentCSS.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/example/day02/Comment.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/example/day02/Comment.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/example/day02/CommentList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/example/day02/component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/example/day02/과제/todo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/example/day02/과제/todo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/example/day02/과제/todo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/example/day02/과제/todoList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/example/팀과제/CarController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/example/팀과제/Car/CarController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/example/팀과제/CarDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/example/팀과제/Car/CarDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/example/팀과제/CarEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/example/팀과제/Car/CarEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/example/팀과제/CarEntityRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/example/팀과제/Car/CarEntityRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/example/팀과제/CarService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/example/팀과제/Car/CarService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/example/팀과제/CarStart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/example/팀과제/Car/CarStart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ezenweb/model/dto/BoardDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ezenweb/model/dto/BoardDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ezenweb/model/entity/BoardEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ezenweb/model/entity/BoardEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ezenweb/model/entity/MemberEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ezenweb/model/entity/MemberEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/reactapp/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/reactapp/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +53,21 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -48,31 +95,37 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;모듈&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/504/Desktop/ezen_webspring_2023_A/src/main/reactapp/src/component/example/day02/과제",
+    "project.structure.last.edited": "프로젝트",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "File.Encoding"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\504\Desktop\ezen_webspring_2023_A\src\main\reactapp\src\component\example\day02\과제" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\504\Desktop\ezen_webspring_2023_A\src\main\reactapp" />
+      <recent name="C:\Users\504\Desktop\ezen_webspring_2023_A\src\main\reactapp\src" />
       <recent name="C:\Users\504\Desktop\ezen_webspring_2023_A\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="애플리케이션.EzenWebStart">
+  <component name="RunManager" selected="애플리케이션.AppStart">
     <configuration name="AppStart" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="example.day04.AppStart" />
+      <option name="MAIN_CLASS_NAME" value="example.팀과제.연관관계설계.AppStart" />
       <module name="ezen_webspring_2023_A.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="example.day04.*" />
+          <option name="PATTERN" value="example.팀과제.연관관계설계.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -93,6 +146,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="example.팀과제.연관관계설계.Main" />
+      <module name="ezen_webspring_2023_A.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="example.팀과제.연관관계설계.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="example.객체연관관계.Main2" />
+      <module name="ezen_webspring_2023_A.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="example.객체연관관계.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="NoteStart" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="example.day06.NoteStart" />
       <module name="ezen_webspring_2023_A.main" />
@@ -106,25 +185,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="example.day05.AppStart" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="example.day05.AppStart" />
-      <module name="ezen_webspring_2023_A.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="example.day05.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="애플리케이션.AppStart" />
+        <item itemvalue="애플리케이션.Main" />
+        <item itemvalue="애플리케이션.Main2" />
         <item itemvalue="애플리케이션.EzenWebStart" />
         <item itemvalue="애플리케이션.NoteStart" />
-        <item itemvalue="애플리케이션.example.day05.AppStart" />
-        <item itemvalue="애플리케이션.AppStart" />
       </list>
     </recent_temporary>
   </component>
@@ -212,7 +279,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697611714466</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="day88 리액트 설치 및 실행, JSX 정의">
+      <option name="closed" value="true" />
+      <created>1697619559123</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1697619559123</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -224,7 +299,8 @@
     <MESSAGE value="과제5번 강사님 ver 추가 &#10;스프링 요약본 나누기" />
     <MESSAGE value="day88 게시판 entity dto repository rest구축" />
     <MESSAGE value="day88 게시판 SERVICE CONTROLLER" />
-    <option name="LAST_COMMIT_MESSAGE" value="day88 게시판 SERVICE CONTROLLER" />
+    <MESSAGE value="day88 리액트 설치 및 실행, JSX 정의" />
+    <option name="LAST_COMMIT_MESSAGE" value="day88 리액트 설치 및 실행, JSX 정의" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -243,6 +319,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/ezenweb/EzenWebStart.java</url>
           <line>8</line>
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/example/팀과제/연관관계설계/Main.java</url>
+          <line>2</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/ezenweb/model/repository/MemberEntityRepository.java</url>

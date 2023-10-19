@@ -31,9 +31,12 @@ public class BoardEntity extends BaseTime{ // 테이블 설계
     // [ BaseTime 클래스가 상속해주는 필드 : 1. 작성일 , 2. 수정일 ]
     @Column( columnDefinition = "longtext" , nullable = true )
     private String bfile;
-    @Column
-    private int mno;
 
+    // FK
+    @ToString.Exclude // toString() 함수에 제외하는 필드
+    @JoinColumn( name = "mno_fk" ) // FK 필드로 사용하는 어노테이션 ( name = "FK필드명" )
+    @ManyToOne // 다수가 하나에게 [ Fk ]
+    private MemberEntity memberEntity;
 
     // entity -> dto [ 상황에 따라 여러개 선언 ]
     // 1. [ 전체 => 게시판 출력 페이지 ] 출력 할때.
@@ -44,7 +47,7 @@ public class BoardEntity extends BaseTime{ // 테이블 설계
                 .bcontent( this.bcontent )
                 .bfile( this.bfile )
                 .bview( this.bview )
-                .mno( this.mno )
+                .mno( this.memberEntity.getMno() )
                 .cdate( this.getCdate() )
                 .udate( this.getUdate() )
                 .build();
@@ -57,7 +60,7 @@ public class BoardEntity extends BaseTime{ // 테이블 설계
                 .bcontent( this.bcontent )
                 .bfile( this.bfile )
                 .bview( this.bview )
-                .mno( this.mno )
+                .mno( this.memberEntity.getMno() )
                 .cdate( this.getCdate() )
                 .udate( this.getUdate() )
                 .build();
