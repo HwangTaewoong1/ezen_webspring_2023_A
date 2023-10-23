@@ -13,7 +13,7 @@ export default function TodoList( props ){
     return(<>
        <div className="todowrap">
         <h1> 나만의 할 일 목록 </h1>
-        <div class="todo_top">
+        <div className="todo_top">
                     <input className="tcontent" type="text"/>
                     <button type="button">등록</button>
         </div>

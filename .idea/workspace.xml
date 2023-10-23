@@ -5,43 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e47fc769-14b8-4c02-a28f-421a37b0a088" name="변경" comment="day88 리액트 설치 및 실행, JSX 정의">
-      <change afterPath="$PROJECT_DIR$/src/main/java/example/객체연관관계/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/example/객체연관관계/Main2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/example/객체연관관계/게시물.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/example/객체연관관계/댓글.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/example/객체연관관계/상위클래스.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/example/객체연관관계/하위클래스.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/example/객체연관관계/회원.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/example/팀과제/연관관계설계/AppStart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/example/팀과제/연관관계설계/CategoryEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/example/팀과제/연관관계설계/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/example/팀과제/연관관계설계/OrderEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/example/팀과제/연관관계설계/ProductEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/example/팀과제/연관관계설계/제품.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/example/팀과제/연관관계설계/주문.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/example/팀과제/연관관계설계/카테고리.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/reactapp/react_2일차.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/example/day01/component_과제.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/example/day02/1_componentCSS.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/example/day02/Comment.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/example/day02/Comment.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/example/day02/CommentList.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/example/day02/component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/example/day02/과제/todo.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/example/day02/과제/todo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/example/day02/과제/todo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/example/day02/과제/todoList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/Footer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/Header.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/Index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/Main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/example/ExampleList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/example/day03/1_RouterComponent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/member/Login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/member/Signup.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/reactapp/src/css/header.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/reactapp/src/프로젝트파일구조.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/example/팀과제/CarController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/example/팀과제/Car/CarController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/example/팀과제/CarDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/example/팀과제/Car/CarDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/example/팀과제/CarEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/example/팀과제/Car/CarEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/example/팀과제/CarEntityRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/example/팀과제/Car/CarEntityRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/example/팀과제/CarService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/example/팀과제/Car/CarService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/example/팀과제/CarStart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/example/팀과제/Car/CarStart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ezenweb/model/dto/BoardDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ezenweb/model/dto/BoardDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ezenweb/model/entity/BoardEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ezenweb/model/entity/BoardEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ezenweb/model/entity/MemberEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ezenweb/model/entity/MemberEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/reactapp/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/reactapp/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/reactapp/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/reactapp/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/reactapp/src/component/example/day01/component_과제.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/example/day01/component_과제.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/reactapp/src/component/example/day02/Homework/todo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/example/day02/Homework/todo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/reactapp/src/component/example/day02/Homework/todoList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/example/day02/Homework/todoList.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/reactapp/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/reactapp/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -95,25 +75,26 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/504/Desktop/ezen_webspring_2023_A/src/main/reactapp/src/component/example/day02/과제",
-    "project.structure.last.edited": "프로젝트",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "File.Encoding"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/504/Desktop/ezen_webspring_2023_A/src/main/reactapp/src/component/example/day02/과제&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;프로젝트&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;File.Encoding&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\504\Desktop\ezen_webspring_2023_A\src\main\reactapp\src\component\example\day02\과제" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\504\Desktop\ezen_webspring_2023_A\src\main\reactapp\src\component\example" />
       <recent name="C:\Users\504\Desktop\ezen_webspring_2023_A\src\main\reactapp" />
       <recent name="C:\Users\504\Desktop\ezen_webspring_2023_A\src\main\reactapp\src" />
       <recent name="C:\Users\504\Desktop\ezen_webspring_2023_A\src\main\resources" />

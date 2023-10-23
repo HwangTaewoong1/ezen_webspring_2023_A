@@ -6,8 +6,8 @@ export default function Todo( props ){ /* 하나의 게시물 구역 */
         <div className="">
             <div className="commentBox">
                                     <div className="todo">
-                                    <div class="tcontent"> {props.content} </div>
-                                    <div class="etcbtns">
+                                    <div className="tcontent"> {props.content} </div>
+                                    <div className="etcbtns">
                                         <button type="button"> 상태변경 </button>
                                         <button type="button"> 제거하기 </button>
                                    </div>
