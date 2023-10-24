@@ -12,6 +12,8 @@ export default function ExampleList(props){
              <Link to='/example/day02/CommentList'>  CommentList 예제 </Link>
              <Link to='/example/day01/컴포넌트5'> 컴포넌트 과제 </Link>
              <Link to='/example/day02/TodoList'> TodoList 과제 </Link>
+             <Link to='/example/day04/AxiosComponent'> AxiosComponent </Link>
+
         </div>
     </>)
 }

@@ -20,6 +20,7 @@ import ExampleList from './example/ExampleList';
 import TodoList from './example/day02/Homework/todoList';
 import Login from './member/Login'
 import Signup from './member/Signup'
+import AxiosComponent from './example/day04/1_AxiosComponent'
 
 
 export default function Index( props ){
@@ -41,6 +42,7 @@ export default function Index( props ){
                         <Route path='/example/day02/CSS적용컴포넌트' element={ <CssComponent />} />
                         <Route path='/example/day02/CommentList' element={ <CommentList />} />
                         <Route path='/example/day02/TodoList' element={ <TodoList />} />
+                        <Route path='/example/day04/AxiosComponent' element={ <AxiosComponent />} />
                      {/* Member */}
                      <Route path='/login' element={ <Login />} />
                      <Route path='/signup' element={ <Signup />} />
