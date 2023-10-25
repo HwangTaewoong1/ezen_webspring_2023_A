@@ -4,16 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e47fc769-14b8-4c02-a28f-421a37b0a088" name="변경" comment="day 93 Axios 사용">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ezenweb/config/SpringMvcViewConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/reactapp/src/css/login.css" afterDir="false" />
+    <list default="true" id="e47fc769-14b8-4c02-a28f-421a37b0a088" name="변경" comment="day 94 리액트">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ezenweb/controller/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ezenweb/controller/MemberController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/reactapp/src/component/example/day04/1_AxiosComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/example/day04/1_AxiosComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/reactapp/src/component/member/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/member/Login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/reactapp/src/component/member/Signup.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/member/Signup.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/reactapp/src/component/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/Header.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -275,7 +269,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698117200195</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="day 94 리액트">
+      <option name="closed" value="true" />
+      <created>1698211805651</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1698211805651</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -290,7 +292,8 @@
     <MESSAGE value="day88 리액트 설치 및 실행, JSX 정의" />
     <MESSAGE value="day 89 ExampleList , Route 태그" />
     <MESSAGE value="day 93 Axios 사용" />
-    <option name="LAST_COMMIT_MESSAGE" value="day 93 Axios 사용" />
+    <MESSAGE value="day 94 리액트" />
+    <option name="LAST_COMMIT_MESSAGE" value="day 94 리액트" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
