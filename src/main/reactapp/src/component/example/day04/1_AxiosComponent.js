@@ -15,12 +15,16 @@
                  axios.methodType(url).then( 반환 매개변수 => {})
 
              3.
-                - JSON 객체를 HTTP BODY 형식으로 보낼때.
                 axios
-                     .methodType( url , { json객체 })
-                     .then( 반환 매개변수 => {} )
+                     .methodType( url , data , headerOption )
+                     .then( 반환 매개변수 => { } )
+                     .catch( 오류매개변수 => { } )
 
                  - JSON 객체를 HTTP BODY 형식으로 보낼때.
+                  axios
+                       .methodType( url , JSON객체 )
+                       .then( 반환 매개변수 => {} )
+                 - JSON 객체를 쿼리스트링 형식으로 보낼때.
                 axios
                      .methodType( url , { params : json객체 })
                      .then( 반환 매개변수 => {} )

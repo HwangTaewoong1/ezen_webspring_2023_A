@@ -4,13 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e47fc769-14b8-4c02-a28f-421a37b0a088" name="변경" comment="day 89 ExampleList , Route 태그">
-      <change afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/example/day04/1_AxiosComponent.js" afterDir="false" />
+    <list default="true" id="e47fc769-14b8-4c02-a28f-421a37b0a088" name="변경" comment="day 93 Axios 사용">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ezenweb/config/SpringMvcViewConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/reactapp/src/css/login.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/reactapp/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/reactapp/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/reactapp/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/reactapp/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/reactapp/src/component/Index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/Index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/reactapp/src/component/example/ExampleList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/example/ExampleList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ezenweb/controller/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ezenweb/controller/MemberController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/reactapp/src/component/example/day04/1_AxiosComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/example/day04/1_AxiosComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/reactapp/src/component/member/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/member/Login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/reactapp/src/component/member/Signup.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/member/Signup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +77,7 @@
     &quot;project.structure.last.edited&quot;: &quot;프로젝트&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;File.Encoding&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -88,7 +91,7 @@
       <recent name="C:\Users\504\Desktop\ezen_webspring_2023_A\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="애플리케이션.AppStart">
+  <component name="RunManager" selected="애플리케이션.EzenWebStart">
     <configuration name="AppStart" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="example.팀과제.연관관계설계.AppStart" />
       <module name="ezen_webspring_2023_A.main" />
@@ -264,7 +267,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698043183239</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="day 93 Axios 사용">
+      <option name="closed" value="true" />
+      <created>1698117200195</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1698117200195</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -278,7 +289,8 @@
     <MESSAGE value="day88 게시판 SERVICE CONTROLLER" />
     <MESSAGE value="day88 리액트 설치 및 실행, JSX 정의" />
     <MESSAGE value="day 89 ExampleList , Route 태그" />
-    <option name="LAST_COMMIT_MESSAGE" value="day 89 ExampleList , Route 태그" />
+    <MESSAGE value="day 93 Axios 사용" />
+    <option name="LAST_COMMIT_MESSAGE" value="day 93 Axios 사용" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
