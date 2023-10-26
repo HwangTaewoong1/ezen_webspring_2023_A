@@ -109,4 +109,9 @@ public class MemberController {
         return memberService.getMember();
     }
 
+    // 7. [R]
+    @GetMapping("/findMemail")
+    public boolean getFindMemail(@RequestParam String memail ){
+        return memberService.getFindMemail(memail);
+    }
 }

@@ -5,7 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e47fc769-14b8-4c02-a28f-421a37b0a088" name="변경" comment="day 94 리액트">
+      <change afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/example/day05/1_상태관리컴포넌트.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/example/day05/2_생명주기컴포넌트.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ezenweb/controller/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ezenweb/controller/MemberController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ezenweb/model/repository/MemberEntityRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ezenweb/model/repository/MemberEntityRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ezenweb/service/MemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ezenweb/service/MemberService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/reactapp/src/component/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/reactapp/src/component/member/Signup.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/member/Signup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/reactapp/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/reactapp/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,27 +66,27 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/504/Desktop/ezen_webspring_2023_A/src/main/reactapp/src/component/example/day02/과제&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;프로젝트&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/504/Desktop/ezen_webspring_2023_A/src/main/reactapp/src/component/example/day02/과제",
+    "project.structure.last.edited": "프로젝트",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\504\Desktop\ezen_webspring_2023_A\src\main\reactapp\src\component\example\day02\과제" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\504\Desktop\ezen_webspring_2023_A\src\main\reactapp\src\component\example" />
       <recent name="C:\Users\504\Desktop\ezen_webspring_2023_A\src\main\reactapp" />
+      <recent name="C:\Users\504\Desktop\ezen_webspring_2023_A\src\main\reactapp\src\component\example" />
       <recent name="C:\Users\504\Desktop\ezen_webspring_2023_A\src\main\reactapp\src" />
       <recent name="C:\Users\504\Desktop\ezen_webspring_2023_A\src\main\resources" />
     </key>
@@ -283,7 +291,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698215303341</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="day 94 리액트">
+      <option name="closed" value="true" />
+      <created>1698215607654</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1698215607654</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -323,15 +339,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/example/팀과제/연관관계설계/Main.java</url>
           <line>2</line>
           <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/ezenweb/model/repository/MemberEntityRepository.java</url>
-          <line>9</line>
-          <properties class="ezenweb.model.repository.MemberEntityRepository" method="findPwByMemailAndMphone">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

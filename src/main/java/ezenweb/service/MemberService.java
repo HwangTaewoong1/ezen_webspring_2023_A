@@ -88,7 +88,7 @@ public class MemberService {
     @Transactional
     public MemberDto findId( MemberDto memberDto ) {
         // 1. 검색할 엔티티 찾기
-        Optional<MemberEntity> optionalMemberEntity = Optional.ofNullable(memberEntityRepository.findIdByMnameAndMphone(memberDto.getMname(), memberDto.getMphone()));
+        Optional<MemberEntity> optionalMemberEntity = Optional.ofNullable(memberEntityRepository.findByMnameAndMphone(memberDto.getMname(), memberDto.getMphone()));
         if(optionalMemberEntity.isPresent()) {
             MemberEntity memberEntity = optionalMemberEntity.get();
             return memberEntity.toDto();
@@ -98,7 +98,7 @@ public class MemberService {
     // 6. 비밀번호 찾기
     @Transactional
     public MemberDto findPassword( MemberDto memberDto ) {
-        Optional<MemberEntity> optionalMemberEntity = Optional.ofNullable(memberEntityRepository.findPwByMemailAndMphone(memberDto.getMemail(), memberDto.getMphone()));
+        Optional<MemberEntity> optionalMemberEntity = Optional.ofNullable(memberEntityRepository.findByMemailAndMphone(memberDto.getMemail(), memberDto.getMphone()));
         if (optionalMemberEntity.isPresent()) {
             MemberEntity memberEntity = optionalMemberEntity.get();
             return memberEntity.toDto();
@@ -154,5 +154,12 @@ public class MemberService {
            return (MemberDto) session;
         }
         return null;
+    }
+
+    @Transactional
+    public boolean getFindMemail(String memail){
+       boolean result = memberEntityRepository.existsByMemail(memail);
+        System.out.println("memail = " + result);
+        return result;
     }
 }
