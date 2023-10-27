@@ -21,9 +21,10 @@ import TodoList from './example/day02/Homework/todoList';
 import Login from './member/Login'
 import Signup from './member/Signup'
 import AxiosComponent from './example/day04/1_AxiosComponent'
-
+import Info from './member/Info'
 
 export default function Index( props ){
+
     return(<>
         <div className="webContainer">
             <BrowserRouter>
@@ -43,9 +44,11 @@ export default function Index( props ){
                         <Route path='/example/day02/CommentList' element={ <CommentList />} />
                         <Route path='/example/day02/TodoList' element={ <TodoList />} />
                         <Route path='/example/day04/AxiosComponent' element={ <AxiosComponent />} />
+
                      {/* Member */}
                      <Route path='/login' element={ <Login />} />
                      <Route path='/signup' element={ <Signup />} />
+                     <Route path='/info' element={ <Info />} />
                     </Routes>
                 <Footer />
             </BrowserRouter>
