@@ -20,14 +20,14 @@
         <추후에 계속적으로 추가>
 
     - build.gradle 에 Dependencies 추가
-
+    
 - 프로젝트 폴더구성
     프로젝트명
         .gradle : build.gradle 빌드 파일 [ 임시파일 ]
         .idea   : 인텔리제이 셋팅 파일 [ 임시파일 ]
         build  : JVM 빌드시 생성한 바이트파일 [ 임시파일 ]
-        gradle : gradle 라이브러리 파일
-        ****src : 개발자 코드 작성하는 공간
+        gradle : gradle 라이브러리 파일 
+        ****src : 개발자 코드 작성하는 공간 
             main
                 java		: 백엔드
 
@@ -42,13 +42,13 @@
 
                ****build.gradle : 라이브러리 자동 빌드 해주는 작성 코드 파일
 
-- 스프링부트 실행
+- 스프링부트 실행 
 	준비물
 	-main함수 1개 필요 [ 스프링을 작동할 스레드 1개 필요 ]
 	1. 클래스 1개 생성 [ 스프링 실행하는 클래스 이므로 모든 소스파일의 최상위 위치 ]
-	2. 클래스 상단
+	2. 클래스 상단 
 		@SpringBootApplication 주입
-	3. main 선언
+	3. main 선언 
 		SpringApplication.run( 현재클래스명.class );
 
 - MVC 3티어
@@ -58,5 +58,27 @@
         VIEW , CONTROLLER
     서비스 레이어
         SERVICE
-    레파지토리 레이어
+    리포지토리 레이어
         REPOSITORY
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

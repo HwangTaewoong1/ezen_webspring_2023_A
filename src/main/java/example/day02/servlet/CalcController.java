@@ -11,9 +11,16 @@ import java.io.IOException;
 public class CalcController extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        req.setCharacterEncoding("UTF-8");
         // soutv : 근접한 변수의 출력
         String num1 = req.getParameter("num1");     System.out.println("num1 = " + num1);
         String num2 = req.getParameter("num2");     System.out.println("num2 = " + num2);
     }
 }
+
+
+
+
+
+
+
+

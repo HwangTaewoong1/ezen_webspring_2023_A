@@ -15,61 +15,66 @@ repositories {
     mavenCentral()
 }
 
-dependencies { // 외부 라이브러리 추가하는 곳 => 자동으로 라이브러리 다운로드 받고 프로젝트에 빌드
-    implementation 'org.springframework.boot:spring-boot-starter'
-    runtimeOnly 'com.mysql:mysql-connector-j' // my sql 라이브러리
-    implementation 'org.springframework.boot:spring-boot-starter-web' // spring web 라이브러리
-    compileOnly 'org.projectlombok:lombok' // lombok
-    annotationProcessor 'org.projectlombok:lombok' // lombok
-    // 인텔리제이 플러그인에서 lombok플러그 설치
-    testImplementation 'org.springframework.boot:spring-boot-starter-test'
-    // jpa 라이브러리
-    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+dependencies { // 외부 라이브러리 추가하는 곳 => 자동으로 해당 라이브러리 다운로드받고 프로젝트에 빌드
+    implementation 'org.springframework.boot:spring-boot-starter-oauth2-client' // oauth2-client ( 소셜 로그인)
+    implementation 'org.springframework.boot:spring-boot-starter-web' // springboot web 라이브러리
+    runtimeOnly 'com.mysql:mysql-connector-j'       // mysql 라이브러리
+    compileOnly 'org.projectlombok:lombok'          // 롬복 라이브러리
+    annotationProcessor 'org.projectlombok:lombok'  // 롬복 라이브러리
+    // 추가로 인텔리제이 플러그인에서 lombok플러그인 설치
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa' // JPA 라이브러리
+    implementation 'org.springframework.boot:spring-boot-starter-security' // spring security 라이브러리
 }
 
 tasks.named('test') {
     useJUnitPlatform()
 }
-//-------------------리액트(빌드) 통합-----------------//
-// * 터미널에서 리액트 실행하지 않고 GRADLE이 리액트를 빌드해서 빌드된 파일을 스프링 쪽으로 이동
-// 1. 리액트 코드파일이 있는 리액트 폴더 경로
-def frontendDir = "$projectDir/src/main/reactapp"
-
-sourceSets {
+// ---------------------------- 리액트(빌드) 통합 ------------------------ //
+// *. 터미널에서 리액트 실행하지 않고 gradle 이 리액트를 빌드해서 빌드된 파일을 스프링쪽으로 이동
+// 1. 리액트 코드파일이 있는 리액트프로젝트 폴더 경로 정의
+def frontendDir = "$projectDir/src/main/reactapp"; // $projectDir/src/main/{리액트프로젝트폴더명}
+    // $projectDir : gradle 프로젝트 의 위치
+// 2. 리액트 코드파일을 빌드해서 빌드된 파일을 어디로 이동할지.. 정의
+sourceSets{ // sources[x] source [o]
     main {
-        resources { srcDirs = ["$projectDir/src/main/resources"]
-        }
+        resources { srcDirs = ["$projectDir/src/main/resources"] }
     }
 }
-
+// 3. 이동[ 원본 이동X ,  복사 이동O ]
 processResources { dependsOn "copyReactBuildFiles" }
 
-task installReact(type: Exec) {
-    workingDir "$frontendDir"
-    inputs.dir "$frontendDir"
+// 4. [1] 리액트 설치 [ 리액트 라이브러리 없으면 npm update 자동해주고 있으면 npm update X ]
+task installReact( type : Exec ){
+    //dependsOn "installReact"
+    workingDir "$frontendDir" // 리액트코드가 있는 폴더경로
+    inputs.dir "$frontendDir" // 빌드 했을때 저장할 폴더경로
     group = BasePlugin.BUILD_GROUP
+    // npm 호출 [ 운영체제 별로 명령어 다름 ] = 강의기준 : 개발(윈도우) / 배포(리눅스)
+        // 1. 운영체제가 window 환경 이면
     if (System.getProperty('os.name').toLowerCase(Locale.ROOT).contains('windows')) {
-        commandLine "npm.cmd", "audit", "fix"
-        commandLine 'npm.cmd', 'install' }
-    else {
-        commandLine "npm", "audit", "fix" commandLine 'npm', 'install'
+        // node 명령어
+        commandLine "npm.cmd" , "audit" , "fix"
+        commandLine "npm.cmd" , "install"
+    }else{ // 운영체제가 window가 아니면
+        commandLine "npm" , "audit" , "fix"
+        commandLine "npm" , "install"
     }
 }
-
-task buildReact(type: Exec) {
-    // dependsOn "installReact"
-    workingDir "$frontendDir"
-    inputs.dir "$frontendDir"
+// 5. [2] 리액트 실행/빌드
+task buildReact( type: Exec ){
+    dependsOn "installReact"
+    workingDir "$frontendDir" // 리액트코드가 있는 폴더경로
+    inputs.dir "$frontendDir" // 빌드 했을때 저장할 폴더경로
     group = BasePlugin.BUILD_GROUP
     if (System.getProperty('os.name').toLowerCase(Locale.ROOT).contains('windows')) {
-        commandLine "npm.cmd", "run-script", "build"
-    } else {
-        commandLine "npm", "run-script", "build"
+        commandLine "npm.cmd" , "run-script" , "build"
+    }else{ // 운영체제가 window가 아니면
+        commandLine "npm" , "run-script" , "build"
     }
 }
-
-task copyReactBuildFiles(type: Copy) {
+// 6. [3] 리액트 빌드파일 복사
+task copyReactBuildFiles( type: Copy ){
     dependsOn "buildReact"
-    from "$frontendDir/build"
-    into "$projectDir/src/main/resources/static"
+    from   "$frontendDir/build"    // 복사할 파일이 어디에서
+    into   "$projectDir/src/main/resources/static"  // 복사할 파일을 어디로
 }

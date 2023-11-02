@@ -8,35 +8,32 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/phone")
+@RequestMapping("/todo")
 public class TodoController {
     @Autowired
     private TodoService todoService;
 
     @GetMapping("/index")
-    public Resource getIndex(){
-        return new ClassPathResource("templates/phone.html");
-    }
+    public Resource getIndex(){ return new ClassPathResource("templates/todo.html"); }
 
-    @PostMapping("")
-    public boolean doPost( @RequestBody TodoDto  todoDto ){
-        boolean result = todoService.doPost(todoDto);
+    @PostMapping("") // POST http://localhost:80/todo
+    public boolean doPost( @RequestBody TodoDto todoDto ){
+        boolean result = todoService.doPost( todoDto );
         return result;
     }
     @GetMapping("")
-    public List<TodoDto> doGet(){
-        List<TodoDto> result = todoService.doGet();
+    public List<TodoDto > doGet( ) {
+        List<TodoDto > result = todoService.doGet();
         return result;
     }
     @PutMapping("")
-    public boolean doPut( @RequestBody TodoDto  todoDto ){
-        boolean result = todoService.doPut(todoDto);
+    public boolean doPut( @RequestBody TodoDto todoDto ){
+        boolean result = todoService.doPut( todoDto );
         return result;
     }
     @DeleteMapping("")
     public boolean doDelete( @RequestParam int tno ){
-        boolean result = todoService.doDelete(tno);
+        boolean result = todoService.doDelete( tno );
         return result;
-
     }
 }

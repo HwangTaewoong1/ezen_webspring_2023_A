@@ -24,15 +24,15 @@ header {
 }
 header > h2 { margin-left:20px; }
 header ul {
-   width:750px;
-   height:100%;
-   display: flex;
-   justify-content: space-between;
+	width:750px;
+	height:100%;
+	display: flex;
+	justify-content: space-between;
 }
 header ul > li {
-   height: 100%;
-   display: flex;
-   align-items: center;
+	height: 100%;
+	display: flex;
+	align-items: center;
 }
 
 /* 푸터 */

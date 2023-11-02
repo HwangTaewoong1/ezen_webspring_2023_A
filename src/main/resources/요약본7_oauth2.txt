@@ -1,0 +1,78 @@
+1. oauth2 라이브러리 설치
+    implementation 'org.springframework.boot:spring-boot-starter-oauth2-client'
+2. oauth2 와 카카오 연동
+    - application.properties 에서 작업
+3. SpringSecurityConfig 에서 oauth2 로그인으로 사용할 페이지 설정
+4. view(리액트) 에서 href="/oauth2/authorization/kakao" 로 요청
+
+=========================== 각 소셜 회사 별 설정 =======================
+
+- 카카오
+                1. 카카오 개발자 센터
+                2. 애플리케이션 신청
+                3. 플랫폼 : 사이트 도메인 등록
+                4. 카카오로그인
+                                  활성화:ON
+                                  Redirect URL:
+                                             - 카카오 로그인에서 사용할 주소 설정
+                                           EX) http://localhost/login/oauth2/code/kakao
+                5. 동의항목
+                                  닉네임: 필수동의
+                                  이메일 : 선택동의
+                                   그 외 자유( 사업자번호 필요)
+                6. 보안
+                                 Client Secret
+                                                  - 코드생성
+                                                    코드: ~~~
+                                                    활성화 상태 : 사용함
+
+- 네이버 [ 배포하려면 -> 사업자 번호 신청 ]
+                1. 네이버 개발자센터 로그인
+                2. 애플리케이션 등록
+                    - 회사명(선택) / 휴대전화 인증
+                    1. 어플리케이션 이름 : 아무거나
+                    2. 사용API 네이버로그인
+                        권한
+                            별명 , 연락처 이메일주소
+                    3. 서비스 환경 : PC 웹
+                       서비스 URL : http://localhost:80
+                       Callback URL : http://localhost:80/login/oauth2/code/naver
+                    4. 등록하기
+                3. 내 애플리 케이션
+                    1. 원하는 애플리케이션 선택
+                        애플리케이션 정보
+                           Client ID : ~
+                           CLient Secret : ~
+- 구글
+                1. 구글 클라우드 플랫폼 로그인
+                2. 프로젝트 선택 -> 새 프로젝트
+                     프로젝트 이름: 아무거나
+                     만들기
+                3. 프로젝트 선택 -> 만든 프로젝트
+                4. 사이드바 메뉴 -> API 및 서비스
+                     -Oauth 동의 화면
+                        1. 외부 체크 -> 만들기
+                        2.
+                            앱이름 : 웹 이름
+                            사용자 지원 이메일 : 관리자 이메일
+                            개발자 연락처 정보 : 개발자 이메일
+                            저장 후 계속
+                        3. 범위 추가 또는 삭제
+                            .../auth/userinfo.email
+                            .../auth/userinfo.profile
+                            다음 -> 다음 -> 요약 확인
+
+                     - 사용자 인증 정보
+                        1. 사용자 인증 정보 만들기
+                            Oauth 클라이언트 ID
+                                애플리케이션 유형 - 웹 애플리케이션
+                                웹 이름 : 홈페이지 이름 (임의)
+                                승인된 리디렉션 uri
+                                    http://localhost:80/login/oauth2/code/google
+                                    <만들기>
+                                OAuth 2.0 클라이언트 ID에 생성된 클라이언트 이름 누르기
+                                    클라이언트 ID
+                                    클라이언트 보안 비밀번호
+
+
+

@@ -5,7 +5,8 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface BoardEntityRepository extends JpaRepository<BoardEntity, Integer > {
-    // extends JpaRepository< 조작할 엔티티 , 조작할 엔티티의 pk 필드 타입  >
+public interface BoardEntityRepository
+    //extends JpaRepository< 조작할엔티티 , 조작할엔티티의PK필드타입 > {
+    extends JpaRepository< BoardEntity, Integer > {
 
 }

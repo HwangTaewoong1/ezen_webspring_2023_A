@@ -45,11 +45,11 @@ public class TodoDao {
             while ( rs.next() ){
                 // 생성자 대신에 빌더패턴을 이용한 객체 생성후 리스트에 저장
                 list.add( TodoDto.builder()
-                        .tno( rs.getInt("tno") )
-                        .tcontent(rs.getString("tcontent") )
-                        .tstate( rs.getBoolean("tstate") )
-                        .build()
-                );
+                                .tno( rs.getInt("tno") )
+                                .tcontent(rs.getString("tcontent") )
+                                .tstate( rs.getBoolean("tstate") )
+                                .build()
+                        );
             }
         }catch ( Exception e ){ System.out.println("e = " + e);  }
         return list;
@@ -78,3 +78,12 @@ public class TodoDao {
         return false;
     }
 }
+
+
+
+
+
+
+
+
+

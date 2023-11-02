@@ -15,7 +15,6 @@ public class ConsoleDto { // TODO 클래스
         this.dueDate = dueDate;
         this.finished = finished;
     }
-
     public int getTno() {
         return tno;
     }
@@ -36,7 +35,7 @@ public class ConsoleDto { // TODO 클래스
         return dueDate;
     }
 
-    public void setDueDate(LocalDate duedate) {
+    public void setDueDate(LocalDate dueDate) {
         this.dueDate = dueDate;
     }
 
@@ -55,6 +54,7 @@ public class ConsoleDto { // TODO 클래스
                 ", title='" + title + '\'' +
                 ", dueDate=" + dueDate +
                 ", finished=" + finished +
-                '}'+ "\n";
+                '}'+"\n";
     }
+
 }

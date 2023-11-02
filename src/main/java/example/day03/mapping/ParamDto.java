@@ -2,8 +2,6 @@ package example.day03.mapping;
 
 import lombok.*;
 
-
-@Builder
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter

@@ -7,45 +7,35 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
 
-@RestController// 해당 클래스를 스프링 MVC중 컨트롤러 객체로 사용 // 스프링 컨트롤러 객체를 빈에 등록
+@RestController //  @Controller 동일한 기능 + @ResponseBody 제공
 public class RestController3 {
     // 1. GET
-    @RequestMapping( value = "/day03/red" , method = RequestMethod.GET)
+    // @ResponseBody : 해당 클래스가 @RestController 인 경우에는 생략 가능
+    @RequestMapping( value = "/day03/red"  , method = RequestMethod.GET )
     public String getRed(HttpServletRequest request ) throws IOException {
-        //
         String param1 = request.getParameter("param1");
-        System.out.println("param1 : " + param1);
-        // 응답
-        return "정상응답";
+        System.out.println("param1 = " + param1);
+        return "정상응답";   // 2.응답
     }
     // 2. POST
-    @RequestMapping( value = "/day03/red" , method = RequestMethod.POST)
-
-    public String postRed(HttpServletRequest request) throws IOException {
-        //
+    @RequestMapping( value = "/day03/red"  , method = RequestMethod.POST )
+    public String postRed(HttpServletRequest request  ) throws IOException {
         String param1 = request.getParameter("param1");
-        System.out.println("param1 : " + param1);
-        // 응답
-        return "정상응답";
+        System.out.println("param1 = " + param1);
+        return "정상응답";   // 2.응답
     }
     // 3. PUT
-    @RequestMapping( value = "/day03/red" , method = RequestMethod.PUT)
-
-    public String putRed(HttpServletRequest request) throws IOException {
-        //
+    @RequestMapping( value = "/day03/red"  , method = RequestMethod.PUT )
+    public String putRed(HttpServletRequest request ) throws IOException {
         String param1 = request.getParameter("param1");
-        System.out.println("param1 : " + param1);
-        // 응답
-        return "정상응답";
+        System.out.println("param1 = " + param1);
+        return "정상응답";   // 2.응답
     }
     // 4. DELETE
-    @RequestMapping( value = "/day03/red" , method = RequestMethod.DELETE)
-
+    @RequestMapping( value = "/day03/red"  , method = RequestMethod.DELETE )
     public String deleteRed(HttpServletRequest request ) throws IOException {
-        //
         String param1 = request.getParameter("param1");
-        System.out.println("param1 : " + param1);
-        // 응답
-        return "정상응답";
+        System.out.println("param1 = " + param1);
+        return "정상응답";   // 2.응답
     }
 }

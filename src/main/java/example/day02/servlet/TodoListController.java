@@ -12,13 +12,25 @@ import java.util.List;
 public class TodoListController extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
         System.out.println("TodoListController.doGet");
-        // 1. 서비스의 메소드 호출
+        // 1.서비스의 메소드 호출
         TodoService todoService = new TodoService();
         List<TodoDto> result = todoService.getList();
-        // 2. 서비스의 메소드로부터 리턴된 값을 응답
-        resp.setContentType("text/html; charset=UTF-8");
+        // 2. 서비스의 메소드로부터 리턴된값을 응답
+        resp.setContentType("text/html;charset=utf-8");
         resp.getWriter().println( result );
-
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
