@@ -74,6 +74,21 @@ public class BoardService {
         // 3.
         return boardDtos;
     }
+
+    public BoardDto doGet( int bno ){
+        // 1. 엔티티 호출
+        Optional<BoardEntity> optionalBoardEntity = boardEntityRepository.findById( bno );
+        // 2. 엔티티 가 호출 되었는지 확인
+        if(optionalBoardEntity.isPresent() ){
+
+            BoardEntity boardEntity = optionalBoardEntity.get();
+            BoardDto boardDto = boardEntity.allToDto();
+
+            return boardDto;
+        }
+        return null;
+
+    }
     // 3.
     @Transactional // !!!!!! 필수 : 수정은 하나의 함수에 sql 여러개 실행될 경우가 있어서 !!!!!!!!!
     public boolean update( BoardDto boardDto ){

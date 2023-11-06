@@ -47,6 +47,7 @@ public class BoardEntity extends BaseTime { // 테이블 설계
                 .cdate( this.getCdate() ).udate( this.getUdate() )
                 .build();
     }
+
 }
 
 /*

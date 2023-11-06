@@ -4,136 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e47fc769-14b8-4c02-a28f-421a37b0a088" name="변경" comment="day 96">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ezenweb/config/SpringSecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ezenweb/controller/AuthLoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/세션정리.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/board/BoardList.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/board/BoardWrite.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/example/day02/컴포넌트.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/요약본7_oauth2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="e47fc769-14b8-4c02-a28f-421a37b0a088" name="변경" comment="태웅아.. 커밋좀 하자... 이게 며칠 분량이니..?">
+      <change afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/board/BoardUpdate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/board/BoardView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/example/day06/1_라우터매개변수.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/example/day01/consoleMvc/ConsoleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/example/day01/consoleMvc/ConsoleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/example/day01/consoleMvc/ConsoleDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/example/day01/consoleMvc/ConsoleDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/example/day01/consoleMvc/ConsoleDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/example/day01/consoleMvc/ConsoleDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/example/day01/consoleMvc/ConsoleStart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/example/day01/consoleMvc/ConsoleStart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/example/day01/lombok/LombokDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/example/day01/lombok/LombokDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/example/day01/lombok/LombokTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/example/day01/lombok/LombokTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/example/day01/webMvc/WebController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/example/day01/webMvc/WebController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/example/day01/webMvc/WebDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/example/day01/webMvc/WebDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/example/day01/webMvc/WebDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/example/day01/webMvc/WebDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/example/day01/webMvc/WebStart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/example/day01/webMvc/WebStart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/example/day02/WebStart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/example/day02/WebStart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/example/day02/servlet/CalcController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/example/day02/servlet/CalcController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/example/day02/servlet/HelloServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/example/day02/servlet/HelloServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/example/day02/servlet/MyServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/example/day02/servlet/MyServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/example/day02/servlet/TodoDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/example/day02/servlet/TodoDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/example/day02/servlet/TodoListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/example/day02/servlet/TodoListController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/example/day02/servlet/TodoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/example/day02/servlet/TodoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/example/day03/AppStart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/example/day03/AppStart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/example/day03/mapping/DeleteMappingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/example/day03/mapping/DeleteMappingController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/example/day03/mapping/GetMappingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/example/day03/mapping/GetMappingController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/example/day03/mapping/ParamDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/example/day03/mapping/ParamDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/example/day03/mapping/PostMappingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/example/day03/mapping/PostMappingController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/example/day03/mapping/PutMappingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/example/day03/mapping/PutMappingController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/example/day03/restful/RestController1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/example/day03/restful/RestController1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/example/day03/restful/RestController2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/example/day03/restful/RestController2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/example/day03/restful/RestController3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/example/day03/restful/RestController3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/example/day03/restful/RestController4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/example/day03/restful/RestController4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/example/day03/restful/RestController5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/example/day03/restful/RestController5.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/example/day03/restful/ServletController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/example/day03/restful/ServletController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/example/day04/AppStart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/example/day04/AppStart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/example/day04/ToDoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/example/day04/ToDoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/example/day04/TodoDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/example/day04/TodoDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/example/day04/TodoDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/example/day04/TodoDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/example/day04/TodoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/example/day04/TodoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/example/day05/AppStart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/example/day05/AppStart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/example/day05/TodoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/example/day05/TodoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/example/day05/TodoDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/example/day05/TodoDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/example/day05/TodoEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/example/day05/TodoEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/example/day05/TodoEntityRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/example/day05/TodoEntityRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/example/day05/TodoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/example/day05/TodoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/example/day06/NoteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/example/day06/NoteController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/example/day06/NoteDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/example/day06/NoteDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/example/day06/NoteEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/example/day06/NoteEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/example/day06/NoteEntityRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/example/day06/NoteEntityRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/example/day06/NoteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/example/day06/NoteService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/example/day06/NoteStart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/example/day06/NoteStart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/example/객체연관관계/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/example/객체연관관계/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/example/객체연관관계/Main2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/example/객체연관관계/Main2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/example/객체연관관계/게시물.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/example/객체연관관계/게시물.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/example/객체연관관계/댓글.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/example/객체연관관계/댓글.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/example/객체연관관계/상위클래스.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/example/객체연관관계/상위클래스.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/example/객체연관관계/하위클래스.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/example/객체연관관계/하위클래스.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/example/객체연관관계/회원.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/example/객체연관관계/회원.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ezenweb/EzenWebStart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ezenweb/EzenWebStart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ezenweb/config/SpringMvcViewConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ezenweb/config/SpringMvcViewConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ezenweb/controller/BoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ezenweb/controller/BoardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ezenweb/controller/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ezenweb/controller/MemberController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ezenweb/model/dto/BoardDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ezenweb/model/dto/BoardDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ezenweb/model/dto/MemberDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ezenweb/model/dto/MemberDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ezenweb/model/entity/BaseTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ezenweb/model/entity/BaseTime.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ezenweb/model/entity/BoardEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ezenweb/model/entity/BoardEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ezenweb/model/entity/MemberEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ezenweb/model/entity/MemberEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ezenweb/model/repository/BoardEntityRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ezenweb/model/repository/BoardEntityRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ezenweb/model/repository/MemberEntityRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ezenweb/model/repository/MemberEntityRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ezenweb/service/BoardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ezenweb/service/BoardService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ezenweb/service/MemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ezenweb/service/MemberService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/reactapp/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/reactapp/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/reactapp/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/reactapp/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/reactapp/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/reactapp/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/reactapp/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/reactapp/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/reactapp/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/reactapp/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/reactapp/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/reactapp/public/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/reactapp/public/robots.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/reactapp/public/robots.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/reactapp/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/reactapp/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/reactapp/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/reactapp/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/reactapp/src/App.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/reactapp/src/App.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/reactapp/src/component/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/Footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/reactapp/src/component/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/Header.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/reactapp/src/component/Index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/Index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/reactapp/src/component/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/Main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/reactapp/src/component/example/ExampleList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/example/ExampleList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/reactapp/src/component/example/day01/1_component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/example/day01/1_컴포넌트.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/reactapp/src/component/example/day01/2_component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/example/day01/2_컴포넌트.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/reactapp/src/component/example/day01/3_component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/example/day01/3_컴포넌트.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/reactapp/src/component/example/day01/4_component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/example/day01/4_컴포넌트.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/reactapp/src/component/example/day02/1_componentCSS.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/example/day02/1_CSS적용컴포넌트.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/reactapp/src/component/example/day02/Comment.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/example/day02/Comment.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/reactapp/src/component/example/day02/Comment.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/example/day02/Comment.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/reactapp/src/component/example/day02/CommentList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/example/day02/CommentList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/reactapp/src/component/example/day02/component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/reactapp/src/component/example/day03/1_RouterComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/example/day03/1_라우터컴포넌트.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/reactapp/src/component/example/day04/1_AxiosComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/example/day04/1_Axios컴포넌트.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/reactapp/src/component/example/day05/1_상태관리컴포넌트.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/example/day05/1_상태관리컴포넌트.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/reactapp/src/component/example/day05/2_생명주기컴포넌트.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/example/day05/2_생명주기컴포넌트.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/reactapp/src/component/member/Info.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/member/Info.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/reactapp/src/component/member/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/member/Login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/reactapp/src/component/member/Signup.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/member/Signup.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/reactapp/src/css/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/reactapp/src/css/header.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/reactapp/src/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/reactapp/src/css/login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/reactapp/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/reactapp/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/reactapp/src/component/board/BoardList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/board/BoardList.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/reactapp/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/reactapp/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/reactapp/src/reportWebVitals.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/reactapp/src/reportWebVitals.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/reactapp/src/setupTests.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/reactapp/src/setupTests.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/todo.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/todo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/요약본1_프로젝트구조,셋팅,실행.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/요약본1_프로젝트구조,셋팅,실행.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/요약본2_어노테이션.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/요약본2_어노테이션.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/요약본3_HTML반환.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/요약본3_HTML반환.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/요약본4_JPA.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/요약본4_JPA.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/요약본5_HTTP.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/요약본5_HTTP.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -437,7 +323,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698382757152</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="태웅아.. 커밋좀 하자... 이게 며칠 분량이니..?">
+      <option name="closed" value="true" />
+      <created>1698903749054</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1698903749054</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -455,7 +349,8 @@
     <MESSAGE value="day 94 리액트" />
     <MESSAGE value="day 95 상태관리 생명주기 헤더 리랜더링" />
     <MESSAGE value="day 96" />
-    <option name="LAST_COMMIT_MESSAGE" value="day 96" />
+    <MESSAGE value="태웅아.. 커밋좀 하자... 이게 며칠 분량이니..?" />
+    <option name="LAST_COMMIT_MESSAGE" value="태웅아.. 커밋좀 하자... 이게 며칠 분량이니..?" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -485,6 +380,10 @@
           <line>18</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="8" />
+        </breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
