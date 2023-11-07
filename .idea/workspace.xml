@@ -5,20 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e47fc769-14b8-4c02-a28f-421a37b0a088" name="변경" comment="태웅아.. 커밋좀 하자... 이게 며칠 분량이니..?">
-      <change afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/board/BoardUpdate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/board/BoardView.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/example/day06/1_라우터매개변수.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ezenweb/model/dto/PageDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ezenweb/controller/BoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ezenweb/controller/BoardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ezenweb/model/dto/MemberDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ezenweb/model/dto/MemberDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ezenweb/model/entity/BoardEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ezenweb/model/entity/BoardEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ezenweb/model/repository/BoardEntityRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ezenweb/model/repository/BoardEntityRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ezenweb/service/BoardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ezenweb/service/BoardService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ezenweb/service/MemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ezenweb/service/MemberService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/reactapp/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/reactapp/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/reactapp/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/reactapp/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/reactapp/src/component/Index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/Index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/reactapp/src/component/board/BoardList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/board/BoardList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/reactapp/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/reactapp/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/reactapp/src/component/example/day05/2_생명주기컴포넌트.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/example/day05/2_생명주기컴포넌트.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -331,7 +324,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698903749054</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="태웅아.. 커밋좀 하자... 이게 며칠 분량이니..?">
+      <option name="closed" value="true" />
+      <created>1699264670351</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1699264670351</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
