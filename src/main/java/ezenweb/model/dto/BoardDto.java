@@ -23,6 +23,8 @@ public class BoardDto {
     // +
     private LocalDateTime cdate;
     private LocalDateTime udate;
+    // +
+    private String memail;
 
     // dto -> entity
     // 1. entity 저장할때

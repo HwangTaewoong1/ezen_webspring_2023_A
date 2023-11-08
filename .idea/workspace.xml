@@ -4,15 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e47fc769-14b8-4c02-a28f-421a37b0a088" name="변경" comment="태웅아.. 커밋좀 하자... 이게 며칠 분량이니..?">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ezenweb/model/dto/PageDto.java" afterDir="false" />
+    <list default="true" id="e47fc769-14b8-4c02-a28f-421a37b0a088" name="변경" comment="11_07">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ezenweb/controller/BoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ezenweb/controller/BoardController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ezenweb/model/dto/BoardDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ezenweb/model/dto/BoardDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ezenweb/model/entity/BoardEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ezenweb/model/entity/BoardEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ezenweb/model/repository/BoardEntityRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ezenweb/model/repository/BoardEntityRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ezenweb/service/BoardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ezenweb/service/BoardService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/reactapp/src/component/board/BoardList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/board/BoardList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/reactapp/src/component/example/day05/2_생명주기컴포넌트.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/example/day05/2_생명주기컴포넌트.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -332,7 +331,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699264670351</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="11_07">
+      <option name="closed" value="true" />
+      <created>1699341042534</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1699341042534</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -351,7 +358,8 @@
     <MESSAGE value="day 95 상태관리 생명주기 헤더 리랜더링" />
     <MESSAGE value="day 96" />
     <MESSAGE value="태웅아.. 커밋좀 하자... 이게 며칠 분량이니..?" />
-    <option name="LAST_COMMIT_MESSAGE" value="태웅아.. 커밋좀 하자... 이게 며칠 분량이니..?" />
+    <MESSAGE value="11_07" />
+    <option name="LAST_COMMIT_MESSAGE" value="11_07" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

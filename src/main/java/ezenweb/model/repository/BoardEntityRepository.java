@@ -33,7 +33,14 @@ public interface BoardEntityRepository
     // @Query(value = "select * from board where = :bno" , nativeQuery = true) // == findById
     //@Query(value = "select * from board where = :btitle" , nativeQuery = true) // == findByBtitle
     // @Query(value = "select * from board where bcontent = :keyword" , nativeQuery = true) // == findByContent
-    @Query(value = "select * from board where btitle like %:keyword%" , nativeQuery = true) // == 내용이 포함된(검색)
+    // @Query(value = "select * from board where btitle like %:keyword%" , nativeQuery = true) // == 내용이 포함된(검색)
+    // Qurey 문에서 true이면 전체검색 .
+    @Query(value = "select * from board where" +
+            " if ( :keyword = '' , true , " +
+            " if( :key = 'btitle' , btitle like %:keyword% ," +
+            " if( :key = 'bcontent' , bcontent like %:keyword% , true  ) ) )" +
+            " order by cdate desc"
+            , nativeQuery = true)
     Page<BoardEntity>  findBySearch( String key , String keyword , Pageable pageable);
 
 }

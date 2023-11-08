@@ -20,8 +20,9 @@ public class BoardController {
     }
     // 2. 전체게시물출력
     @GetMapping("")
-    public PageDto getAll(@RequestParam int page, @RequestParam String key  ,@RequestParam String keyword){
-        return boardService.getAll( page , key , keyword );  }
+    public PageDto getAll(@RequestParam int page, @RequestParam String key  ,@RequestParam String keyword , @RequestParam int view){
+        return boardService.getAll( page , key , keyword , view);
+    }
 
     // 2-2 . 개별게시물출력
     @GetMapping("/doGet")

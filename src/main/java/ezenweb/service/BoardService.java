@@ -71,8 +71,8 @@ public class BoardService {
     }
     // 2.
     @Transactional
-    public PageDto getAll( int page , String key , String keyword ){
-        Pageable pageable = PageRequest.of( page-1 , 2   ); // 페이지 0부터 시작이라 -1 , size = 1페이지당 출력될 게시물 수
+    public PageDto getAll( int page , String key , String keyword , int view ){
+        Pageable pageable = PageRequest.of( page-1 , view   ); // 페이지 0부터 시작이라 -1 , size = 1페이지당 출력될 게시물 수
         // 1. 모든 게시물 호출한다.
        // Page<BoardEntity> boardEntities = boardEntityRepository.findAll( pageable );
         Page<BoardEntity> boardEntities = boardEntityRepository.findBySearch( key , keyword , pageable );
@@ -131,8 +131,10 @@ public class BoardService {
                 = boardEntityRepository.findById( bno );
         // 2. 검색된 엔티티가 존재하면
         if( boardEntityOptional.isPresent() ){
+
             // 3. 엔티티 꺼내기
             BoardEntity boardEntity = boardEntityOptional.get();
+            boardEntity.setBview(boardEntity.getBview()+1);
             // 4. 엔티티 -> dto 변환
             BoardDto boardDto = boardEntity.allToDto();
             // 5. dto 반환
