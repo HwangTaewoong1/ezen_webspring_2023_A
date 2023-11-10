@@ -40,7 +40,7 @@ public class MemberEntity extends BaseTime {
     private List<BoardEntity> boardEntityList = new ArrayList<>();
 
     // entity --> dto 변환 함수
-        // service 에서 entity 정보 를 controller 로 이동하기 위해
+    // service 에서 entity 정보 를 controller 로 이동하기 위해
     public MemberDto toDto(){
         return MemberDto.builder()
                 .mno(this.mno)
@@ -54,4 +54,3 @@ public class MemberEntity extends BaseTime {
                 .build();
     }
 }
-

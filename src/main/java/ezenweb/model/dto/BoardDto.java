@@ -4,6 +4,7 @@ import ezenweb.model.entity.BoardEntity;
 import lombok.*;
 import org.hibernate.annotations.ColumnDefault;
 import org.springframework.data.annotation.LastModifiedDate;
+import org.springframework.web.multipart.MultipartFile;
 
 import javax.persistence.Column;
 import javax.persistence.GeneratedValue;
@@ -20,11 +21,14 @@ public class BoardDto {
     private int bview;
     private String bfile;
     private int mno;
-    // +
-    private LocalDateTime cdate;
-    private LocalDateTime udate;
-    // +
+    // + entity에서의 날짜타입 toLocalDate
+    // dto에서의 날짜타입x 문자타입
+    private String cdate;
+    private String udate;
+    // + 작성자 아이디
     private String memail;
+    // + 첨부파일 [ spring 지원하는 첨부파일 라이브러리 ]
+    private MultipartFile file;
 
     // dto -> entity
     // 1. entity 저장할때

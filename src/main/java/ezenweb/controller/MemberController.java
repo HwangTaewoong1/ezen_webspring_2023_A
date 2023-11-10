@@ -74,12 +74,3 @@ public class MemberController {
         return memberService.getFindMemail(  memail );
     }
 }
-
-
-
-
-
-
-
-
-

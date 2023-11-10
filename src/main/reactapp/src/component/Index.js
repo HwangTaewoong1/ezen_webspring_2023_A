@@ -18,17 +18,17 @@ import CSS컴포넌트 from './example/day02/1_CSS적용컴포넌트';
 import CommentList from './example/day02/CommentList';
 import Axios컴포넌트 from './example/day04/1_Axios컴포넌트';
 
-
 /* Member import */
 import Login from './member/Login';
 import Signup from './member/Signup';
 import Info from './member/Info';
-
 /* Board import */
 import BoardList from './board/BoardList';
 import BoardWrite from './board/BoardWrite';
 import BoardView from './board/BoardView';
 import BoardUpdate from './board/BoardUpdate';
+/* Product import */
+import ProductAdmin from './product/ProductAdmin';
 
 export default function Index( props ){
     return(<>
@@ -38,7 +38,6 @@ export default function Index( props ){
                     <Routes >
                         {/* MAIN*/}
                         <Route path='/' element = { <Main />} />
-
                         {/* EXAMPLE */}
                          <Route path='/example' element = { <ExampleList />} />
                             <Route path='/example/day01/컴포넌트1' element = { <컴포넌트1 />} />
@@ -47,18 +46,18 @@ export default function Index( props ){
                             <Route path='/example/day01/컴포넌트4' element = { <컴포넌트4 />} />
                             <Route path='/example/day02/CSS적용컴포넌트' element = { <CSS컴포넌트 />} />
                             <Route path='/example/day02/CommentList' element = { <CommentList />} />
-
                             <Route path='/example/day04/Axios컴포넌트' element = { <Axios컴포넌트 />} />
-
                         {/* MEMBER */}
                         <Route path='/login' element = { <Login />} />
                         <Route path='/signup' element = { <Signup />} />
                         <Route path='/info' element = { <Info />} />
-                         {/* Board */}
-                         <Route path='/board/list' element = { <BoardList />} />
-                         <Route path='/board/write' element = { <BoardWrite />} />
-                         <Route path='/board/view' element = { <BoardView />} />
-                         <Route path='/board/update' element = { <BoardUpdate />} />
+                        {/* BOARD */}
+                        <Route path='/board/list' element = { <BoardList />} />
+                        <Route path='/board/write' element = { <BoardWrite />} />
+                        <Route path='/board/view' element = { <BoardView />} />
+                        <Route path='/board/update' element = { <BoardUpdate />} />
+                        {/* admin */}
+                        <Route path='/admin/product' element = { <ProductAdmin />} />
                     </Routes >
                 <Footer />
             </BrowserRouter >

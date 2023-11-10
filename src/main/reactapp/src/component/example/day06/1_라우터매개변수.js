@@ -1,41 +1,36 @@
-import { BrowserRouter , Routes , Route , Link } from "react-router-dom" //  npm i react-router-dom 설치 후 가능
-import { useSearchParams } from 'react-router-dom'; // 4-1. HTTP URL 경로상의 쿼리스트링 매개변수 호출 라이브러리 호출
-import { useParams } from 'react-router-dom';  // 4-2. HTTP URL 경로상의 경로매개변수 호출 라이브러리 호출
-import { useState } from 'react';
-
+import { BrowserRouter , Routes , Route , Link  } from 'react-router-dom';
+import { useSearchParams } from 'react-router-dom'; // 4.HTTP URL 경로상의 쿼리스트링 매개변수 호출 라이브러리 호출
+import { useParams } from 'react-router-dom' // 4. HTTP URL 경로상의 경로매개변수 호출 라이브러리 호출
+import { useState } from 'react'
 // 1. 상위 컴포넌트 라우터
-export default function 라우터매개변수(props){
+export default function 라우터매개변수( props ){
     return(<>
-        <h3> 라우터 매개변수 </h3>
+        <h3> 라우터매개변수 </h3>
         <BrowserRouter>
             <Routes>
-                <Route path="/" element = { < 목록페이지/>} />
-                {/* 매개변수인지 경로인지 구분 가능 ? */}
-                <Route path="/view1" element = { < 상세페이지_쿼리스트링/>} />
-                {/* 매개변수인지 경로인지 구분 : 매개변수 일경우 : */}
-                <Route path="/view2/:bno/:value" element = { < 상세페이지_경로/>} />
+                <Route path="/" element = { <목록페이지 />} />
+                { /*매개변수인지 경로인지 구분 가능 ? */}
+                <Route path="/view1" element = { <상세페이지_쿼리스트링 />} />
+                { /*매개변수인지 경로인지 구분 :매개변수명 */}
+                <Route path="/view2/:bno/:value" element = { <상세페이지_경로 />} />
             </Routes>
         </BrowserRouter>
     </>)
 }
 // 2. 상위 컴포넌트
-function 목록페이지(props){
-
+function 목록페이지( props ){
     const [ value , setValue ] = useState('');
-
     return(<>
         <h3> 목록페이지 </h3>
-        <input type="text" onChange={ (e) => { setValue( e.target.value ) } } /> <br/>
+        <input type="text" onChange={ (e)=> { setValue(e.target.value) } } />  <br/>
         <Link to={"/view1?bno=1&value="+value}>상세페이지_쿼리스트링</Link> <br/>
-        <Link to={"/view2/2"/+value}>상세페이지_경로</Link>
+        <Link to={"/view2/2/"+value}>상세페이지_경로</Link>
     </>)
 }
 
-
-
-// 3-1. 하위 컴포넌트
-function 상세페이지_쿼리스트링(props){
-    const [ searchParams , setSearchParams ] = useSearchParams()
+// 3. 하위 컴포넌트
+function 상세페이지_쿼리스트링( props ){
+    const [ searchParams , setSearchParams ]  = useSearchParams()
     console.log( searchParams )
 
     let bno = searchParams.get('bno')
@@ -48,11 +43,9 @@ function 상세페이지_쿼리스트링(props){
         </h3>
     </>)
 }
-
-// 3-2. 하위 컴포넌트
-function 상세페이지_경로(props){
-    const params = useParams()
-    console.log( params )
+// 3. 하위 컴포넌트
+function 상세페이지_경로( props ){
+    const params = useParams(); console.log( params )
 
     let bno = params.bno;
     let value = params.value;

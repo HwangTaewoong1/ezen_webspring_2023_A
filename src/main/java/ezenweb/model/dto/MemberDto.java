@@ -19,30 +19,33 @@ import java.util.Map;
 @AllArgsConstructor@NoArgsConstructor
 @Getter@Setter@ToString@Builder
 public class MemberDto implements UserDetails , OAuth2User {
-    // -------------------- OAuth2 User --------------------//
+
+    // ------------------ OAuth2User --------------------- //
     private Map<String, Object> 소셜회원정보;
-    @Override // Oauth2 회원의 정보
+    @Override // oauth2 회원의 정보
     public Map<String, Object> getAttributes() { return 소셜회원정보; }
     @Override // oauth2 회원의 아이디
-    public String getName() { return memail;}
-    // ---------------------UserDetails -------------------//
-    // Collection : 컬렉션 프레임 워크 : set , list , map
-    List<GrantedAuthority> 권한목록;
-    @Override// 계정 권한 목록 [ 여러개 가능 Collection ]
-    public Collection<? extends GrantedAuthority> getAuthorities() { return 권한목록; }
+    public String getName() { return memail; }
+    // ------------------ UserDetails --------------------- //
+    // Collection : 컬레션 프레임워크 : set , list , map
+    private List<GrantedAuthority> 권한목록 ;
+    @Override // 계정 권한 목록 [ 여러개 가능 Collection ]
+    public Collection<? extends GrantedAuthority> getAuthorities() { return 권한목록;  }
     @Override // 계정 비밀번호
-    public String getPassword() { return mpassword; }
+    public String getPassword() {  return mpassword; }
     @Override // 계정 아이디
-    public String getUsername() { return memail; }
-    @Override // 계정 만료여부
+    public String getUsername() {  return memail;  }
+    @Override // 계정 만료 여부
     public boolean isAccountNonExpired() { return true; }
-    @Override // 계정 잠금 여부
+    @Override // 계정 잠금 여부   true 열림  false 잠김
     public boolean isAccountNonLocked() { return true; }
     @Override // 계정 증명 여부
-    public boolean isCredentialsNonExpired() { return true; }
-    @Override // 계정 활성화
-    public boolean isEnabled() { return true; }
-    // ----------------------------------------------------//
+    public boolean isCredentialsNonExpired() {  return true;   }
+    @Override // 계정 활성화 여부
+    public boolean isEnabled() { return true;  }
+    // ---------------------------------------------------- //
+
+
     private int mno;            // 1.회원번호
     private String memail;      // 2.이메일[회원아이디 대체 ]
     private String mpassword;   // 3.비밀번호
@@ -55,7 +58,7 @@ public class MemberDto implements UserDetails , OAuth2User {
     private LocalDateTime udate;
 
     // dto --> entity 변환 함수
-        // service 에서 dto정보 를 db테이블 매핑에 저장하기 위해서
+    // service 에서 dto정보 를 db테이블 매핑에 저장하기 위해서
     public MemberEntity toEntity(){
         return MemberEntity.builder()
                 .mno(this.mno)

@@ -3,6 +3,7 @@ package ezenweb.controller;
 import ezenweb.model.dto.BoardDto;
 import ezenweb.model.dto.PageDto;
 import ezenweb.service.BoardService;
+import ezenweb.service.FileService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -20,14 +21,16 @@ public class BoardController {
     }
     // 2. 전체게시물출력
     @GetMapping("")
-    public PageDto getAll(@RequestParam int page, @RequestParam String key  ,@RequestParam String keyword , @RequestParam int view){
-        return boardService.getAll( page , key , keyword , view);
+    public PageDto getAll(
+            @RequestParam int page  ,
+            @RequestParam String key ,
+            @RequestParam String keyword ,
+            @RequestParam int view ){
+        return boardService.getAll( page , key , keyword , view );
     }
-
     // 2-2 . 개별게시물출력
     @GetMapping("/doGet")
     public BoardDto doGet( @RequestParam int bno ){
-
         return boardService.doGet( bno );
     }
 
@@ -42,4 +45,13 @@ public class BoardController {
         return boardService.delete( bno );
     }
 
-}
+    // 5. 첨부파일다운로드요청
+    @GetMapping("/filedownload")
+    public void filedownload(
+            @RequestParam String uuidFile ){
+        fileService.fileDownload( uuidFile );
+    } // m end
+
+    @Autowired private FileService fileService;
+
+} // class end

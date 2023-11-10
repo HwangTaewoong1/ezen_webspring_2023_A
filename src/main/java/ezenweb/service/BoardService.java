@@ -13,6 +13,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Controller;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.*;
@@ -27,6 +28,8 @@ public class BoardService {
     @Autowired private BoardEntityRepository boardEntityRepository;
     @Autowired private MemberService memberService;
     @Autowired private MemberEntityRepository memberEntityRepository;
+    @Autowired FileService fileService;
+
     // 1.
     @Transactional // 함수내 여럿 SQL를 하나의 일처리 단위로 처리
     public boolean write( BoardDto boardDto  ){
@@ -67,14 +70,29 @@ public class BoardService {
         // 5. 양방향 저장 [ 회원엔티티에 게시물 엔티티 넣어주기 ]
         memberEntityOptional.get().getBoardEntityList().add( boardEntity );
         // ================================= 양방향 end ================================================= //
-        if( boardEntity.getBno() >= 1) { return true; } return false;
-    }
+        if( boardEntity.getBno() >= 1) {
+            // 게시물 쓰기 성공시 파일 처리
+            String filename
+                    = fileService.fileUpload( boardDto.getFile() );
+            // 파일처리 결과 를 db에 저장
+            if( filename != null ){ boardEntity.setBfile( filename ); }
+
+            return true;
+        }
+        return false;
+    } // write m end
+
+
+
+
     // 2.
     @Transactional
-    public PageDto getAll( int page , String key , String keyword , int view ){
-        Pageable pageable = PageRequest.of( page-1 , view   ); // 페이지 0부터 시작이라 -1 , size = 1페이지당 출력될 게시물 수
+    public PageDto getAll( int page , String key ,
+                           String keyword , int view ){
+        // 페이징처리
+        Pageable pageable = PageRequest.of( page-1 , view  );
         // 1. 모든 게시물 호출한다.
-       // Page<BoardEntity> boardEntities = boardEntityRepository.findAll( pageable );
+        //Page<BoardEntity> boardEntities = boardEntityRepository.findAll( pageable );
         Page<BoardEntity> boardEntities = boardEntityRepository.findBySearch( key , keyword , pageable );
 
         // 2.  List<BoardEntity> --> List<BoardDto>
@@ -131,10 +149,10 @@ public class BoardService {
                 = boardEntityRepository.findById( bno );
         // 2. 검색된 엔티티가 존재하면
         if( boardEntityOptional.isPresent() ){
-
             // 3. 엔티티 꺼내기
             BoardEntity boardEntity = boardEntityOptional.get();
-            boardEntity.setBview(boardEntity.getBview()+1);
+            // + 조회수 증가
+            boardEntity.setBview( boardEntity.getBview()+1 );
             // 4. 엔티티 -> dto 변환
             BoardDto boardDto = boardEntity.allToDto();
             // 5. dto 반환
