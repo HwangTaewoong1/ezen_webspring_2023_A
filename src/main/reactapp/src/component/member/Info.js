@@ -1,5 +1,5 @@
 import styles from '../../css/login.css'; // css 호출
-import axios from 'axios';
+toqu
 import { useState , useEffect } from 'react';
 
 export default function Info( props ){ // 로그인 상태별로 , 회원권한(mrol)별로 페이지 접근 제한
